@@ -6,6 +6,6 @@ function opennavipanel() {
 const carCards = document.querySelectorAll(".car-card");
 carCards.forEach((card) => {
     card.addEventListener("click", () => {
-        window.location.href = "/cardetails.html";
+        window.location.href = "cardetails.html";
     });
 });
