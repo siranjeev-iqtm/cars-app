@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header-1 d-flex flex-column justify-content-around py-2 ld">
+        <div class=" justify-content-between align-items-center px-5 w-100 header-pc" style="height:20%">
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 "><i class="fa-solid fa-phone me-2"></i> info@example.com</p>
+                <p class="mx-3 mb-0">|</p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> UAE</p>
+            </div>
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 ">Help</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Support</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Customer</p>
+
+                <a href="" class="mx-1 ms-3 text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="mx-1 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="ms-1 text-white"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+        <div class=" d-flex px-5 w-100 justify-content-between align-items-center " style="height:60%">
+            <div class="toggle " id="toggler" onclick="opennavipanel()">
+                <div></div>
+            </div>
+            <div class="px-2  align-items-center text-white header-pc">
+                <div class="px-2 me-3  fs-4  text-white ">
+                    LOGO
+                </div>
+                <select class="px-2 py-1 rounded mx-2" style="width:150px" aria-label="Default select example">
+                    <option selected>Select Origin</option>
+                    <option value="downtown">Downtown Dubai</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="jbr">Jumeirah Beach Residence (JBR)</option>
+                    <option value="jlt">Jumeirah Lakes Towers (JLT)</option>
+                    <option value="deira">Deira</option>
+                    <option value="bur-dubai">Bur Dubai</option>
+                    <option value="jumeirah">Jumeirah</option>
+                    <option value="al-barsha">Al Barsha</option>
+                    <option value="business-bay">Business Bay</option>
+                    <option value="palm-jumeirah">Palm Jumeirah</option>
+                    <option value="al-quoz">Al Quoz</option>
+                    <option value="mirdif">Mirdif</option>
+                    <option value="satwa">Satwa</option>
+                    <option value="karama">Karama</option>
+                    <option value="nad-al-sheba">Nad Al Sheba</option>
+                    <option value="discovery-gardens">Discovery Gardens</option>
+                    <option value="emirates-hills">Emirates Hills</option>
+                </select>
+                <a href="./index.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Home</a>
+                <a href="./about.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">About</a>
+                <a href="./" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Shop</a>
+                <a href="./listings.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Listings</a>
+                <a class="fs-6 mb-0 mx-3 text-decoration-none text-white" href="./contact.html">Contact Us</a>
+
+            </div>
+            <div class="px-2">
+                <a class=" text-white d-flex align-items-center text-decoration-none">
+                    <i class="fa-regular fa-user fs-6"></i>
+                    <p class="fs-6 mb-0 ms-2"> Hi, User</p>
+                    <i class="fa-solid fa-caret-down ms-2 fs-7 mt-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-mob d-flex flex-column align-items-center py-2" id="mobMenu">
+        <a href="./index.html" class="fs-6  mx-3 my-2 w-100 text-decoration-none text-white text-center py-2 ">Home</a>
+        <a href="./about.html" class="fs-6  mx-3 my-2 text-decoration-none w-100 py-2 text-center text-white">About</a>
+        <a href="./" class="fs-6 mx-3 my-2 text-decoration-none w-100 text-center py-2 text-white">Shop</a>
+        <a href="./listings.html"
+            class="fs-6  mx-3 my-2 w-100 text-center py-2 text-decoration-none text-white">Listings</a>
+        <a class="fs-6 mx-3 text-decoration-none my-2 w-100 text-center py-2 text-white" href="./contact.html">Contact
+            Us</a>
+    </div>
+    <section style="background-color: #050b20; height:35vh; width:100vw; margin-top:110px; position:relative
+    ">
+        <div class="position-absolute  flex-column  h-100 w-100 d-flex align-items-center justify-content-center"
+            style="">
+            <p class="mb-2 me-3 pb-1 car-road-1 position-relative text-center text-white me-4"><a href="./index.html"
+                    class="text-white text-decoration-none dms">Home</a> - Listings<i
+                    class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+            <h1 class="mb-1 text-center text-white ld" style="font-weight: bold; font-size:35px">Car Listings
+            </h1>
+        </div>
+    </section>
+    <section style="position: relative;">
+        <div class="position-sticky mt-3 ms-3 filter-menu" onclick="handleFilters()" style="top:120px; display:none">
+            <i class="fa-solid fa-bars fs-4"></i>
+        </div>
+        <div class="container my-4 px-2" style="max-width:100%;">
+            <div class="row mx-3 position-relative" style="min-height: 2500px;" id="listings">
+                <div id="filter-card" class="position-absolute dms px-3 py-3 filter-card"
+                    style="height:auto; width:355px; border: 1px solid black; border-radius:10px; top:0; left:0">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <strong>Sort:</strong>
+
+                        <select name="" class="px-2 py-2" style="width:150px; border-radius:50px" id="">
+                            <option selected>Trending</option>
+                            <option value="Low To high">Low To High</option>
+                            <option value="High To Low">High To Low</option>
+                        </select>
+
+                    </div>
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <strong>Filters:</strong>
+
+                        <p style="color: #050b209c; font-weight:500" class="mb-0 text-center">Submit your
+                            details</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3  align-items-center position-relative">
+                        <div class="position-absolute"
+                            style="top:50%; left:20px; transform:translateY(-50%); color:#050b209c">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" class="w-100 h-100 p-2 ps-5"
+                            style="border-radius:50px; border:1px solid black" placeholder="Search by make, model">
+                    </div>
+                    <hr class="my-0 py-0" style="color: #809fd4;">
+                    <div class="d-flex justify-content-start my-3  align-items-center position-relative">
+                        <div class="col-lg-12 ">
+                            <button class="p-2 ms-3 mt-2"
+                                style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                Full Price
+                            </button>
+                            <button class="p-2 ms-3 mt-2"
+                                style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                Monthly Price
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex align-items-center"><img style="width: 35px;" src="./images/Component 1.png"
+                                alt=""><strong class="ms-2 py-0 my-0">Price</strong></div>
+                        <p style="color: #050b209c; " class="mb-0 text-center price-input">AED <span
+                                class="">250</span>K
+                            -
+                            <span class="">750</span>K
+                        </p>
+                    </div>
+                    <div class="">
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="1000" value="250" step="10">
+                            <input type="range" class="range-max" min="0" max="1000" value="750" step="10">
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <!-- kmhfvgfvhbvfbghbfdcgcdgh  -->
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex align-items-center"><img style="width: 35px;" src="./images/Component 1.png"
+                                alt=""><strong class="ms-2 py-0 my-0">Price</strong></div>
+                        <p style="color: #050b209c; " class="mb-0 text-center price-input-1">AED <span
+                                class="">1980</span>
+                            -
+                            <span class="">2024</span>
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <div class="slider-1">
+                            <div class="progress-1"></div>
+                        </div>
+                        <div class="range-input-1">
+                            <input type="range" class="range-min" min="1980" max="2024" value="1990" step="1">
+                            <input type="range" class="range-max" min="1980" max="2024" value="2013" step="1">
+                        </div>
+                    </div>
+
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex align-items-center"><img style="width: 35px;" src="./images/Component 1.png"
+                                alt=""><strong class="ms-2 py-0 my-0">Mileage</strong></div>
+                        <p style="color: #050b209c; " class="mb-0 text-center price-input-2"><span class="">10</span>
+                            -
+                            <span class="">15</span>
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <div class="slider-2">
+                            <div class="progress-2"></div>
+                        </div>
+                        <div class="range-input-1">
+                            <input type="range" class="range-min" min="1980" max="2024" value="1990" step="1">
+                            <input type="range" class="range-max" min="1980" max="2024" value="2013" step="1">
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Trims</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Base Option
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Semi Loaded
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Fully Loaded
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="color: #7ba0dc;">
+                    <!-- Body type -->
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Body types</strong>
+                                <div class="d-flex flex-wrap mt-4">
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">Sedan</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">SUV</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">Coupe</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">HatchBack</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">Convertible
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">Wagon</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">PickUp</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">MiniVan</p>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column align-items-center mt-2">
+                                        <img src="./images/1.svg fill.png" alt="">
+                                        <p class="text-center" style="font-size: smaller; color:#050b20ab">Van</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">City</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                        Abu Dhabi
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                        Ajman
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                        Dubai
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b2086">
+                                        Sharjah
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Features</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        Navigation
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Sun Roof
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Reversing Camera
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        GCC Specs
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        Leather Seats
+                                    </button> <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Parking Sensors
+                                    </button> <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        7 Seater
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Service Contract
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Warranty
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Price Guidance</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        <i class="fa-solid fa-circle-arrow-up me-2"></i> Great price
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle-arrow-up  me-2"
+                                            style="transform: rotate(45deg);"></i> Good Price
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle-arrow-right me-2"></i> Fair Price
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Transmission</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Automatic
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Manual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Fuel Type</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Petrol
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        Diesel
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Hybrid
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Electric
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Seller Type</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Safe Switch
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Self Switch
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        Dealers
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Badges</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-fire me-2"></i> Safe Switch
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-comments me-2"></i> Self Switch
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-star me-2"></i> Dealers
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color: #7ba0dc;">
+                    <div class="d-flex justify-content-between my-3  align-items-center">
+                        <div class="d-flex "><img style="width: 35px; height:35px" src="./images/Component 1.png"
+                                alt="">
+                            <div class="d-flex flex-column">
+                                <strong class="ms-2 py-0 my-0">Body color</strong>
+                                <div class="d-flex flex-wrap mt-2 ">
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle me-2 fs-5" style="color: red; "></i> Red
+                                    </button>
+                                    <button class="p-2  ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: white;  "></i> White
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px;color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: black; "></i> Black
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle  fs-5 me-2" style="color:blue ; "></i> Blue
+                                    </button><button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: gold; "></i> Gold
+                                    </button><button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: green; "></i> Green
+                                    </button>
+                                    <button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle  fs-5 me-2" style="color:yellow ; "></i> Yellow
+                                    </button><button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: Brown; "></i> Brown
+                                    </button><button class="p-2 ms-3 mt-2"
+                                        style="background-color:transparent;border:1px solid #D6E5FF; border-radius:50px; font-size:14px; color:#050b20ab">
+                                        <i class="fa-solid fa-circle fs-5 me-2" style="color: gray; "></i> Gray
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-list" style="padding-left: 360px;">
+                    <section>
+                        <div class="container mt-2 ">
+                            <div class="row ">
+                                <div class="col-lg-7 ">
+                                    <p class="my-2 me-3 pb-1 car-road position-relative dms">The most searched cars <i
+                                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                                    <h2 class=" mb-0 pb-0 ld" style="font-weight: bold; ">Explore Your Dream Cars</h2>
+                                </div>
+                                <div class="col-lg-5 opts d-flex  align-items-end mt-3 dms">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="mx-2 mb-0 categories">All</p>
+                                        <p class="mx-2 mb-0 categories">New Cars</p>
+                                        <p class="mx-2 mb-0 categories">Used Cars</p>
+                                        <button class="px-3 py-1 left-btn mx-1"><i
+                                                class="fa-solid fa-arrow-left"></i></button>
+                                        <button class="px-3 py-1 right-btn mx-1"><i
+                                                class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </section>
+                    <div class="d-flex justify-content-around w-100  flex-wrap mt-5  dms" style="width:fit-content">
+
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-1 flex-column my-3 car-card" style="width:265px !important;">
+                            <div class="img-cont">
+                                <img src="https://s7d1.scene7.com/is/image/scom/MY25_LEG_gallery_ext_01?$650j$" alt="">
+                            </div>
+                            <div class="spec-cont d-flex flex-column justify-content-around py-4 px-3">
+                                <h5 class="mb-3">
+                                    Subaru Legacy I4 2.5L
+                                </h5>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">Diesel</p>
+                                        <p class="mb-0">Type</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-0">5 Years</p>
+                                        <p class="mb-0">Manual</p>
+
+                                    </div>
+                                    <hr class="py-0 my-2 ">
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Price: <span class="text-danger">12,000 AED</span></p>
+                                    <p>Review: <span>3k +</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 d-flex justify-content-center">
+                                <button class="mx-1 pages-no"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">1</button>
+                                <button class="mx-1 pages-no"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">2</button>
+                                <button class="mx-1 pages-no"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">3</button>
+                                <button class="mx-1 pages-no"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">4</button>
+                                <button class="mx-1 pages-no"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">5</button>
+                                <button class="mx-1"
+                                    style="background-color: white ; border-radius:50px; color:black; width:30px; height:30px;">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-4">
+                        <div class="row  justify-content-center">
+                            <div class="col-lg-12 d-flex flex-column align-items-center">
+                                <p class="mb-2 me-3 pb-1 car-road-1 position-relative">Search By Brands <i
+                                        class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+                                <h2 class=" mb-0 pb-0 text-center " style="font-weight: bold; ">Our Featured
+                                    Vehicles By
+                                    Brands</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row px-4">
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/7575/3d03/b163b6e286ac880063cc3dfd4e41d421?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZBLQo6J6crteMhzDEAz5V3yzxnZTL208v5HYv7N3~hVRveQOl34Qx~KjtJACTlSCI83T~F8dKLlReVWolr~9WxQMPVaxFu3x0mj8hWMkjqhFn11WXYCKOEZvfPCcxXEFWRUXtix0nt51eLPPMmD09t~rssWYjiLwmgA7weVG7FS~YEaUd13i51lGVg4q7-RQq8JSrWqD0QqvYCKXoJ1skuumEyP5vbVUy3VRUC2VS07r3c3sQ~mDfNo2foS0TZZ6xKXzrMcpMp43QT0vbOnLikHtRjOLWXTVCNN2xelb9TfiEx7N7VfapQDQzGwc1cbmzGznt6UGu3BIdC8odcVvdA__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/89cf/16dd/7a580d769756084e8a666b38741f4d26?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pl62g2A25gRHHxe2bwS7bk8G-BAHop1UFp8qXzApSwxcg22BcnL3XUXzLh-YICJpqnpoxtM7ZDrndjmEl7llzFFPq2fndx66JXc7l8xCC7osiBXFl9Bwt89DwHY-5m1DVx2TZiN564bvjaTuP0oaazmbKYDeGpBSBPwlUmyj4IQuJitP4gLRoFHPSy-RrS1ggqMsJG3RLtuymb5KaRGWBNDeCArK9MWIaDhijR6nMJbUeXoKek3B99ALScKTb3vGPPYKm2HT7nm1NiyOgdhJpxhg3Yw2IePDarO7APpg4FHaxCRLulbhespFaXVF5LSQzvAmVPD~jgNEc54J9jvxdA__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/185f/12f4/8aeb66e90cfa5315ec0d839619cb15b2?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X3Wk-dCQLFOH1-~agH-HukielHutiyS7aUJ10B7XRoBb06T3i7jjc8Ca3gc-vdaGtjTEbgFaapD6cY1Uc7Th9e95shfndZbGWAUUSsbARAo-mEtt0whUzXdXXjch3HgZvtOIiCNXpHtQ5V7Kzzrw4F35Qqzes8VBTC0kd34bdafrrgJHr5n4k7Hd6r-y4hJWl4f0cziF185WsuQitsIzEhTwvQV~BsI8nlwDE1LuqAm4diL0FRqcu2-WdRUeDLS-KxcAFHnj4c-VB2Gu84kOsQMrl3iqQWADIpO6ouhcO~HL5U1KWaUW3gLMCwrHVSlNlUzed0TfYbZNCAOY-CxOTg__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/97a7/9c8c/8e840d55af71ef0518734ab349cdd5ee?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g-viKCzy6dRGWeoibPX-VjimQebcNADoQT5H0jXSlDTHOqrOoqmkMNpoNErjbBJxYMi0G5hqmXRDbqiSNRCjx3pJVNu66xisDLmhJSktTmc8wM-IjUnZK8wjnS42ClBoeficps1reaJQxqLjUUrWzKFzgK1wvmWTX3ZtwPSIEGgiz3EPUNiu4uXHdATbdZ0p1128Gbqv8py3OXuYnxBVCjZoyvlds4O7cPY5p-gsCOMFxGagTepCoWgF4Pz8uc5h76VhD8Lme4gbY8YdWZ-1XZnA5Hf27TRHk0-F3iPcqT06kSylJUQeJG0n7LsDTuvUBDMe0K8svMnnjjejJukBrA__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/7575/3d03/b163b6e286ac880063cc3dfd4e41d421?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZBLQo6J6crteMhzDEAz5V3yzxnZTL208v5HYv7N3~hVRveQOl34Qx~KjtJACTlSCI83T~F8dKLlReVWolr~9WxQMPVaxFu3x0mj8hWMkjqhFn11WXYCKOEZvfPCcxXEFWRUXtix0nt51eLPPMmD09t~rssWYjiLwmgA7weVG7FS~YEaUd13i51lGVg4q7-RQq8JSrWqD0QqvYCKXoJ1skuumEyP5vbVUy3VRUC2VS07r3c3sQ~mDfNo2foS0TZZ6xKXzrMcpMp43QT0vbOnLikHtRjOLWXTVCNN2xelb9TfiEx7N7VfapQDQzGwc1cbmzGznt6UGu3BIdC8odcVvdA__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/6c2a/ba24/46af6581ab553faf87f9ae5ef48976d9?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CPmETlFo-y0~NT3T4eIMmiL7F8cSMJpFWDkWP32mQ~76Pzvz2vm-~CEUF2wyn1Z5k-5sWKzg5TeJjmZ66ExNDaPk0meVpTSRiyvgEuMJbYHbVlKWaXmykDYqB0T~xHrljbSPlFy-f-GsDALkro-MVGd09ilxTeDK7tevxVlRmvFLpOwcftVbYpKjGeP5jqLtYD5SfEoL5ge3mYZV5fO5RKvyNUCMAnq5ZgdK0AaRTsCxC2XRyENsAi5~X7YfZH2uQ4xu9NCtCP~jZJkija-Lb0DgT1OLNF16Y8Yj80g01ALKvwwbwEf199GLpWNf0jQvDG3WH6w6jqD~EHksEEoCtQ__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/3fd2/0e1c/1106c9bdf450de5c0d0525822ef045cb?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JBOq3zhybW178Q1LabKzLv~SLZlxipefFpRZViTiVdxXnweBJRFTB4-l~LLWXsokxlX38sFkXu6JwBVKI~yIvMdsCkLIkwFnqcf0EojntAw3tlCBGM34O9RMqua0mhiINd4hML7Bnlo0gmpYSieRrgdKFovdAeVvi1Sxhc43JGCJ3gLMZm0NHoEe5khaYw321J6c3s-sn52b4D~~9boHmKEtvYI34vp1uxs16J3iTY-U7qx129~RI-x9iYsuUqsnGz8HfWItSY~oi5GpiIplh48gm0ckoOuriBnL88J3vPjCVEzgn4-v2sHE0HpYZvnffsfzrTA~4YYxwWriSM~dsA__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/2cc3/b685/142018dde39c29974f6739bc1cdadb13?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ekpsdo8Amz81pQxpM7V7Qd9-qDQfidqQm9gG0XDQ2NploPPu5Qz0mbKHfbqPrDeS7UzDksBadqg5bFYvCKhdDCVOg6MFoU3sDhY39v0UfTso~uYLiatjnkKXf-7SrUPgzJCjQevT5xCWfLvph8soCIYTtLfM-cIRBcCOgpYMH-DbVS9X7vsnF~72E9JUX~i-g5nfBbxroLlhOnrbBfvEfprG115griDI4PirjpG0IR3blXP9UYJJRSQ4MiurCVNKVcar0VEpkb9UzDbaeUz8ocDVN4APC-1Z3Opfo7h12cw5~X1bENe48j5wc46UuvdWSpplBQP0dEyCYKTUNjOosg__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-around p-4"
+                                    style="border:1px solid #050b209c; border-radius:7px; height:180px">
+                                    <img style="width: 140px;"
+                                        src="https://s3-alpha-sig.figma.com/img/ec96/dae7/9e1506bfb8c07952176465b9d5ef3c58?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oJN~IXO3~3I32htSaYS5uIGVtXtFNY6gBTVx56I7lU6SBwlucxGtgef-EE4z9bANIrBdvSkIg6YLVHW3hNnjWBQ9gd1KL6OkIeGFL1Re-EwA~ZUMVoMpry24KLap~SjXJkf75A8yY-1VbIk2xpWO2XTRi1WmMO7MGR1-h8~r2r6FNjWV5rVSxDL6P1feHs9YDyivG21Pjl3tzUTx9kcyTIUk~4JNh-wJVC-wER9PLW7QqXHzls03S0qRZM4YNN0VfzXJbUEcB-H7W2I2gsMnrINWBnK7OapejolH9ymweaZ1m053NeSw6ufQjUItE3c~vTYW7mI0N7rz46wIN5ESxg__"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <button class="px-3 py-1 left-btn mx-1"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="px-3 py-1 right-btn mx-1"><i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style=" position:relative; background-color: #050b20; color:#F1F1F1">
+        <!-- <div class="position-absolute " style="width: 100%; height:100%; top:0%; left:0%; z-index:4">
+            <img src="./images/Layer_1.png" class=" w-100 h-100 position-relative" alt="">
+        </div> -->
+
+        <div class="container p-4"
+            style="background:url(./images/Layer_1.png); background-size:contain; background-position:center">
+            <div class="row my-4 h-100">
+                <div class="col-lg-5 py-5 px-3" style="display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                ">
+                    <p class="text-white  pb-1 mb-1 dms" style="font-size: smaller;">Research has had a very large
+                        influence
+                        on my
+                        life. I have learned most of
+                        what I know through research.</p>
+                    <h4 class="text-white ld">
+                        NewsLetter
+                    </h4>
+                    <form action="" class="d-flex mb-1 dms">
+                        <input id="subs-email" class="my-1 px-4 input" type="text" placeholder="Your Email Id">
+                        <button id="subs-button" class="my-1 px-3" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white mx-2 dms" style="font-size: smaller;">Your email is safe with us, we don't
+                        spam.
+                        Privacy
+                        Policy
+                    </p>
+                </div>
+                <div class="col-lg-7 d-flex flex-column ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Address
+                                </strong>
+                                <p class="mt-2 dms">#1, 1st Street, Dubai, UAE</p>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Quick Links
+                                </strong>
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Contact</a>
+                                <a href="">Cart</a>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms">
+                                <strong class="ld fw-bold">
+                                    Popular Brands
+                                </strong>
+                                <a href="">bugatti</a>
+                                <a href="">BMW</a>
+                                <a href="">Benz</a>
+                                <a href="">Audi</a>
+                            </div>
+                        </div>
+                        <hr class="py-0 my-0 footer-horizontal" />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+
+                                        <strong class="ld fw-bold">
+                                            Branches
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column justify-content-around px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+                                        <div> <strong class="ld fw-bold">
+
+                                                Call Center
+                                            </strong>
+                                            <p>2345 59786</p>
+                                        </div>
+                                        <div> <strong class="ld fw-bold">
+
+                                                Follow Us
+                                            </strong>
+                                            <div class="d-flex w-100 mt-2 social-footer">
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 mds">
+                                        <strong class="ld fw-bold">
+                                            UAE
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-horizontal" />
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        const rangeInput = document.querySelectorAll(".range-input input"),
+            priceInput = document.querySelectorAll(".price-input span"),
+            range = document.querySelector(".slider .progress"),
+            rangeInputOne = document.querySelectorAll(".range-input-1 input"),
+            priceInputOne = document.querySelectorAll(".price-input-1 span"),
+            rangeOne = document.querySelector(".slider-1 .progress-1");
+        let priceGap = 100;
+        let yearsGap = 1;
+
+        priceInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = parseInt(priceInput[0].innerHTML),
+                    maxPrice = parseInt(priceInput[1].innerHTML);
+
+                if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+                    if (e.target.className === "input-min") {
+                        rangeInput[0].value = minPrice;
+                        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+                    } else {
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+
+        rangeInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minVal = parseInt(rangeInput[0].value),
+                    maxVal = parseInt(rangeInput[1].value);
+                if (maxVal - minVal < priceGap) {
+                    if (e.target.className === "range-min") {
+                        rangeInput[0].value = maxVal - priceGap;
+                    } else {
+                        rangeInput[1].value = minVal + priceGap;
+                    }
+                } else {
+                    priceInput[0].innerHTML = minVal;
+                    priceInput[1].innerHTML = maxVal;
+                    range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+                    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+                }
+            });
+        });
+        //////////////
+        priceInputOne.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = parseInt(priceInputOne[0].innerHTML),
+                    maxPrice = parseInt(priceInputOne[1].innerHTML);
+
+                if (maxPrice - minPrice >= yearsGap && maxPrice <= rangeInputOne[1].max) {
+                    if (e.target.className === "input-min") {
+                        rangeInputOne[0].value = minPrice;
+                        rangeOne.style.left = (minPrice / rangeInputOne[0].max) * 100 + "%";
+                    } else {
+                        rangeInputOne[1].value = maxPrice;
+                        rangeOne.style.right = 100 - (maxPrice / rangeInputOne[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+
+        rangeInputOne.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minVal = parseInt(rangeInputOne[0].value),
+                    maxVal = parseInt(rangeInputOne[1].value);
+
+                if (maxVal - minVal < yearsGap) {
+                    if (e.target.className === "range-min") {
+                        rangeInputOne[0].value = maxVal - priceGapOne;
+                    } else {
+                        rangeInputOne[1].value = minVal + priceGapOne;
+                    }
+                } else {
+                    priceInputOne[0].innerHTML = minVal;
+                    priceInputOne[1].innerHTML = maxVal;
+                    rangeOne.style.left = (minVal / rangeInputOne[0].max) * 100 + "%";
+                    rangeOne.style.right = 100 - (maxVal / rangeInputOne[1].max) * 100 + "%";
+                }
+            });
+        });
+        function handleFilters() {
+            document.getElementById("filter-card").classList.toggle("view");
+        }
+    </script>
+</body>
+
+
+</html>

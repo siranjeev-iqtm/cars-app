@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header-1 d-flex flex-column justify-content-around py-2 ld">
+        <div class=" justify-content-between align-items-center px-5 w-100 header-pc" style="height:20%">
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 "><i class="fa-solid fa-phone me-2"></i> info@example.com</p>
+                <p class="mx-3 mb-0">|</p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> UAE</p>
+            </div>
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 ">Help</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Support</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Customer</p>
+
+                <a href="" class="mx-1 ms-3 text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="mx-1 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="ms-1 text-white"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+        <div class=" d-flex px-5 w-100 justify-content-between align-items-center " style="height:60%">
+            <div class="toggle " id="toggler" onclick="opennavipanel()">
+                <div></div>
+            </div>
+            <div class="px-2  align-items-center text-white header-pc">
+                <div class="px-2 me-3  fs-4  text-white ">
+                    LOGO
+                </div>
+                <select class="px-2 py-1 rounded mx-2" style="width:150px" aria-label="Default select example">
+                    <option selected>Select Origin</option>
+                    <option value="downtown">Downtown Dubai</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="jbr">Jumeirah Beach Residence (JBR)</option>
+                    <option value="jlt">Jumeirah Lakes Towers (JLT)</option>
+                    <option value="deira">Deira</option>
+                    <option value="bur-dubai">Bur Dubai</option>
+                    <option value="jumeirah">Jumeirah</option>
+                    <option value="al-barsha">Al Barsha</option>
+                    <option value="business-bay">Business Bay</option>
+                    <option value="palm-jumeirah">Palm Jumeirah</option>
+                    <option value="al-quoz">Al Quoz</option>
+                    <option value="mirdif">Mirdif</option>
+                    <option value="satwa">Satwa</option>
+                    <option value="karama">Karama</option>
+                    <option value="nad-al-sheba">Nad Al Sheba</option>
+                    <option value="discovery-gardens">Discovery Gardens</option>
+                    <option value="emirates-hills">Emirates Hills</option>
+                </select>
+                <a href="./index.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Home</a>
+                <a href="./about.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">About</a>
+                <a href="./" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Shop</a>
+                <a href="./listings.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Listings</a>
+                <a class="fs-6 mb-0 mx-3 text-decoration-none text-white" href="./contact.html">Contact Us</a>
+
+            </div>
+            <div class="px-2">
+                <a class=" text-white d-flex align-items-center text-decoration-none">
+                    <i class="fa-regular fa-user fs-6"></i>
+                    <p class="fs-6 mb-0 ms-2"> Hi, User</p>
+                    <i class="fa-solid fa-caret-down ms-2 fs-7 mt-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-mob d-flex flex-column align-items-center py-2" id="mobMenu">
+        <a href="./index.html" class="fs-6  mx-3 my-2 w-100 text-decoration-none text-white text-center py-2 ">Home</a>
+        <a href="./about.html" class="fs-6  mx-3 my-2 text-decoration-none w-100 py-2 text-center text-white">About</a>
+        <a href="./" class="fs-6 mx-3 my-2 text-decoration-none w-100 text-center py-2 text-white">Shop</a>
+        <a href="./listings.html"
+            class="fs-6  mx-3 my-2 w-100 text-center py-2 text-decoration-none text-white">Listings</a>
+        <a class="fs-6 mx-3 text-decoration-none my-2 w-100 text-center py-2 text-white" href="./contact.html">Contact
+            Us</a>
+    </div>
+    <section class="mb-2 py-3 dms" style="background-color: #050b20; margin-top:116px !important;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 text-white mb-4">
+                    <h2 class=" pb-0 mb-2" style="font-weight: bold; ">Get the highest offer for your car
+                        sell from the comfort of home!</h2>
+
+                    <div class="d-flex mt-4  ">
+                        <div style="width: 100px;" class="mx-2">
+                            <img src="./images/Component 1 (3).png" style="width: 40px;" alt="">
+                            <p class="text-white mt-2">Valid Car Buyers</p>
+                        </div>
+                        <div style="width: 100px;" class="mx-2">
+                            <img src="./images/Component 1 (3).png" style="width: 40px;" alt="">
+                            <p class="text-white mt-2">Instant Payments</p>
+                        </div>
+                        <div style="width: 100px;" class="mx-2">
+                            <img src="./images/Component 1 (3).png" style="width: 40px;" alt="">
+                            <p class="text-white mt-2">No Unwanted Calls</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <div class="w-100">
+                        <img style="width: 100%;"
+                            src="https://s3-alpha-sig.figma.com/img/bd58/ac2e/0f29ae3c7bc3a3cc466a0e050b780814?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f~3E2p4pVDXajXreLg8CC3vKFY1F24fOl3DrBcFjZPL3-YfakyU2lu~RXQRvpoNpCovY7B7e28TDtusQl1Wft6LGE5nXz515OoRH3PTALVDa8~VLdObMeDSSidz5C8G7anGqIhkvu4DbfXH81vVA5SK4GaYgGvv8R3lxoWJDcipvVVDfi-fl8yTtEZEm7XEMqoVW3rH98JrFWhdR50UWStOkVgiTmzpyVPGZqhbY2F~qw140rG6LqTvEspXX6glv8sWCLqEoiHvfEt80n1mH0eMGghIYEKxjJE7YeK1xPfvciXnzX-nXYOoqMIXsVdvs~~IcQg35EFMkdjrBgcAlww__"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form car details -->
+
+    <section>
+        <div class="container my-5">
+            <div class="row px-5 ">
+                <div class="col-lg-6 my-4 position-relative p-3 px-5" style="border: 1px solid black;">
+                    <form action="" class="w-100">
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Year</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Make</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Model</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Car Mileage</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Regional Specs</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>City</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <select class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px "
+                            aria-label="Default select example">
+                            <option selected>Area</option>
+                            <option value="2000">2000</option>
+                        </select>
+                        <input type="number" placeholder="+931 2567-1567" class="p-2 px-3 mx-2 my-1 w-100 my-3 "
+                            style=" border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#8a8b8e; font-size:18px ">
+
+                        <input type="checkbox" id="check" name="" class="mx-2 my-1" value="checked">
+                        <label for="check"> Car is insured and chassis is undamaged</label>
+                        <br>
+                        <button class="mx-2 w-100 my-3 py-2 px-3"
+                            style="border: 1.48px solid #D6E5FF !important; border-radius:50px; color:#050b20; background-color:#D6E5FF; font-size:18px"
+                            type="submit">Next</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 position-relative p-3 py-4 my-4 d-flex flex-column align-items-center ">
+                    <img class="w-75 mx-5 mt-5" style="height: 450px; object-fit:cover; border:1px solid black"
+                        src="https://s3-alpha-sig.figma.com/img/01df/eafe/10048e464eeead9bb2f0d0ae446a69ee?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lw8sS3442dLyf9L5NLcIs5i7SlzsDCKlfjQmpclfHHN0La2xcj74r9V8HXVzFGhsZLOKvnixySYh~coA9fEClW~MzQY502-aKT8cReNtv2oeQzem0vrTXPOLRH-Xr5Ybq59eGd5UyfTiCX0hy6qDwahZcpBRJIf2LdUmMg4hRSvPu1K4qlADloYocZMtrMfyFxzP3d0XiRrElIQXeDJQ88eDvZw1T5kM0pBk~5qxLGtwAjaRkx74zedPoDzpngXrElZ0MLWwidn6D6IL5X5LUTJ5sZNpy5okXyWT66G9Lw1ZNplsVHkr42op8jaKoUxol2vP-CX~3U4tkEH4aN2Exg__"
+                        alt="">
+                    <p class="mt-5 pt-4 px-3" style="font-size: 18px;">Sell your car at the highest value by directly
+                        connecting
+                        with genuine
+                        buyers, without the risk
+                        of spam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #F1F1F1;" class="py-5 pb-3">
+        <div class="container">
+            <div class="row dms">
+                <div class="col-lg-12">
+                    <h2 class=" pb-0 mb-2 text-center ld" style="font-weight: bold;  color:#252627">Why Sell To?</h2>
+                    <p class="text-center" style="font-weight: 500;  color:#8a8b8e">Sell your car at the highest value
+                        by
+                        directly
+                        connecting with genuine buyers,
+                        without the risk of spam.</p>
+
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Bought.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">50,000+</h2>
+                    <p class="text-center" style="font-weight: 500;">Cars Bought
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Dealers.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">3500+</h2>
+                    <p class="text-center" style="font-weight: 500;">Dealer's Network
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/RCTransfer.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">5000+</h2>
+                    <p class="text-center" style="font-weight: 500;">RCs Transfered</p>
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Location.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">100+</h2>
+                    <p class="text-center" style="font-weight: 500;">Servicable Locations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 position-relative ">
+                    <img style="width: 100%;" src="./images/pngwing.com (1) 1.png" alt="">
+                </div>
+                <div class="col-lg-4 position-relative d-flex flex-column align-items-end">
+                    <img src="./images/file 2.png" style=" height:270px" alt="">
+                    <img src="./images/Background+Border.png" class="" style="height: 70px;" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-column align-items-center justify-content-around mt-5 py-3" style="width:100%;  background: #F1F1F1;
+    ">
+        <div class="container mt-3">
+            <div class="row  justify-content-center">
+                <div class="col-lg-7 d-flex flex-column align-items-center">
+                    <p class="mb-2 me-3 pb-1 car-road position-relative dms ">Testimonials <i
+                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Customer Reviews</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container dms ">
+            <div class="row justify-content-around mx-3">
+                <div class="col-lg-3 position-relative px-3 mt-4">
+                    <div class="d-flex p-2 justify-content-between w-100 bg-black"
+                        style="border-radius: 50px; height:80px">
+                        <div class="" style="width:30%;border-radius: 50px; overflow:hidden">
+                            <img class="w-100 h-100 " style="object-fit: cover;"
+                                src="https://s3-alpha-sig.figma.com/img/83b7/9ab8/62415faa0af8c67ff2fb449cbfce37eb?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHpUHRCPSVajfJXX5phbCaLiBv9m6oNDBxjmZ-yb9d1CagF5zGNqTp7dI0gbUlu-b6w9PZiaQz2abFyIf3gyH~ALBGm3VrNKGWiwxTWNboZV3PxDfb4Oz1XSj98lED2Z4HgWnbnEEzDBVa1YIaZDBCDRNnHxn3Njf7O6WmIPWyQnNAcmnSMkmlodRUP18lgOboiXeeo-Sk5zaptEdreGf7q2nem4lX0GMIzd6WqZQsmCwMmeve8KH3r-sg6U9TBJ7PP4frQ3bA-X1jlZ4lGpB9bU-IFqq1XEwKDu7Mm6KQllqeZeVNKZOIl3bJqtr7SH6YOdURGci5u7Eh~R8vgzLQ__"
+                                alt="">
+                        </div>
+                        <div class="d-flex h-100 flex-column justify-content-center text-white
+                        " style="width:60%">
+                            <strong>William Shakes</strong>
+                            <p class="mb-0">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative px-3 mt-4">
+                    <div class="d-flex p-2 justify-content-between w-100 bg-black"
+                        style="border-radius: 50px; height:80px">
+                        <div class="" style="width:30%;border-radius: 50px; overflow:hidden">
+                            <img class="w-100 h-100 " style="object-fit: cover;"
+                                src="https://s3-alpha-sig.figma.com/img/83b7/9ab8/62415faa0af8c67ff2fb449cbfce37eb?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHpUHRCPSVajfJXX5phbCaLiBv9m6oNDBxjmZ-yb9d1CagF5zGNqTp7dI0gbUlu-b6w9PZiaQz2abFyIf3gyH~ALBGm3VrNKGWiwxTWNboZV3PxDfb4Oz1XSj98lED2Z4HgWnbnEEzDBVa1YIaZDBCDRNnHxn3Njf7O6WmIPWyQnNAcmnSMkmlodRUP18lgOboiXeeo-Sk5zaptEdreGf7q2nem4lX0GMIzd6WqZQsmCwMmeve8KH3r-sg6U9TBJ7PP4frQ3bA-X1jlZ4lGpB9bU-IFqq1XEwKDu7Mm6KQllqeZeVNKZOIl3bJqtr7SH6YOdURGci5u7Eh~R8vgzLQ__"
+                                alt="">
+                        </div>
+                        <div class="d-flex h-100 flex-column justify-content-center text-white
+                        " style="width:60%">
+                            <strong>William Shakes</strong>
+                            <p class="mb-0">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative px-3 mt-4">
+                    <div class="d-flex p-2 justify-content-between w-100 bg-black"
+                        style="border-radius: 50px; height:80px">
+                        <div class="" style="width:30%;border-radius: 50px; overflow:hidden">
+                            <img class="w-100 h-100 " style="object-fit: cover;"
+                                src="https://s3-alpha-sig.figma.com/img/83b7/9ab8/62415faa0af8c67ff2fb449cbfce37eb?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHpUHRCPSVajfJXX5phbCaLiBv9m6oNDBxjmZ-yb9d1CagF5zGNqTp7dI0gbUlu-b6w9PZiaQz2abFyIf3gyH~ALBGm3VrNKGWiwxTWNboZV3PxDfb4Oz1XSj98lED2Z4HgWnbnEEzDBVa1YIaZDBCDRNnHxn3Njf7O6WmIPWyQnNAcmnSMkmlodRUP18lgOboiXeeo-Sk5zaptEdreGf7q2nem4lX0GMIzd6WqZQsmCwMmeve8KH3r-sg6U9TBJ7PP4frQ3bA-X1jlZ4lGpB9bU-IFqq1XEwKDu7Mm6KQllqeZeVNKZOIl3bJqtr7SH6YOdURGci5u7Eh~R8vgzLQ__"
+                                alt="">
+                        </div>
+                        <div class="d-flex h-100 flex-column justify-content-center text-white
+                        " style="width:60%">
+                            <strong>William Shakes</strong>
+                            <p class="mb-0">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative px-3 mt-4">
+                    <div class="d-flex p-2 justify-content-between w-100 bg-black"
+                        style="border-radius: 50px; height:80px">
+                        <div class="" style="width:30%;border-radius: 50px; overflow:hidden">
+                            <img class="w-100 h-100 " style="object-fit: cover;"
+                                src="https://s3-alpha-sig.figma.com/img/83b7/9ab8/62415faa0af8c67ff2fb449cbfce37eb?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHpUHRCPSVajfJXX5phbCaLiBv9m6oNDBxjmZ-yb9d1CagF5zGNqTp7dI0gbUlu-b6w9PZiaQz2abFyIf3gyH~ALBGm3VrNKGWiwxTWNboZV3PxDfb4Oz1XSj98lED2Z4HgWnbnEEzDBVa1YIaZDBCDRNnHxn3Njf7O6WmIPWyQnNAcmnSMkmlodRUP18lgOboiXeeo-Sk5zaptEdreGf7q2nem4lX0GMIzd6WqZQsmCwMmeve8KH3r-sg6U9TBJ7PP4frQ3bA-X1jlZ4lGpB9bU-IFqq1XEwKDu7Mm6KQllqeZeVNKZOIl3bJqtr7SH6YOdURGci5u7Eh~R8vgzLQ__"
+                                alt="">
+                        </div>
+                        <div class="d-flex h-100 flex-column justify-content-center text-white
+                        " style="width:60%">
+                            <strong>William Shakes</strong>
+                            <p class="mb-0">Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row bg-white mx-3 py-3 px-4" style="border-radius: 10px; overflow:hidden">
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-4  ">
+                    <div class=" d-flex align-items-center" style="border-radius: 10px; overflow:hidden">
+                        <p class=""><i class="fa-solid fa-quote-right " style="font-size: 70px;"></i></p>
+                        <div class="d-flex flex-column ms-3">
+                            <div class="nameandstar"><strong>William Shakes</strong>
+                                <p class="mb-0 ms-2"> <span class="" style="color:gold"> <i
+                                            class="fa-solid fa-star me-1"></i><i class="fa-solid fa-star me-1"></i><i
+                                            class="fa-solid fa-star me-1"></i><i class="fa-solid fa-star me-1"></i><i
+                                            class="fa-solid fa-star me-1"></i></span>
+                                </p>
+                            </div>
+
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since
+                            the 1500s, when an unknown Lorem Ipsum is simply dummy </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4">
+                    <div class="img-testimonial w-100 " style="height: 100%; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;"
+                            src="https://s3-alpha-sig.figma.com/img/83b7/9ab8/62415faa0af8c67ff2fb449cbfce37eb?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHpUHRCPSVajfJXX5phbCaLiBv9m6oNDBxjmZ-yb9d1CagF5zGNqTp7dI0gbUlu-b6w9PZiaQz2abFyIf3gyH~ALBGm3VrNKGWiwxTWNboZV3PxDfb4Oz1XSj98lED2Z4HgWnbnEEzDBVa1YIaZDBCDRNnHxn3Njf7O6WmIPWyQnNAcmnSMkmlodRUP18lgOboiXeeo-Sk5zaptEdreGf7q2nem4lX0GMIzd6WqZQsmCwMmeve8KH3r-sg6U9TBJ7PP4frQ3bA-X1jlZ4lGpB9bU-IFqq1XEwKDu7Mm6KQllqeZeVNKZOIl3bJqtr7SH6YOdURGci5u7Eh~R8vgzLQ__"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Frequently Asked Questions</h2>
+                </div>
+                <div class="col-lg-9 mt-5">
+                    <div id="accordion" class="dms">
+                        <!-- Card 1 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>What happens if I receive multiple offers for my vehicle?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: none;"></i>
+                                            <i class="fa-solid fa-minus" style="display: block;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem saepe sapiente velit
+                                    quos, dicta reiciendis?
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        <strong>How long does it take to sell my car?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro commodi natus odio!
+                                    Odio facere vitae cupiditate!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <strong>What happens if my vehicle doesn't sell within a certain
+                                            timeframe?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis adipisci modi
+                                    saepe ab animi eaque!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        <strong>Who will be responsible for RC transfer?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ad cupiditate
+                                    similique delectus odio, dolore voluptate?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        <strong>What payment methods are accepted?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 5.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        <strong>Are there any restrictions on pricing my vehicle?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 6.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
+                                        <strong>What if I change my mind about selling my car?</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 7.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseEight"
+                                        aria-expanded="false" aria-controls="collapseEight">
+                                        <strong>How can you Drive home your dream car? - Card 8</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 8.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseNine"
+                                        aria-expanded="false" aria-controls="collapseNine">
+                                        <strong>How can you Drive home your dream car? - Card 9</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 9.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseTen"
+                                        aria-expanded="false" aria-controls="collapseTen">
+                                        <strong>How can you Drive home your dream car? - Card 10</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 10.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 11 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingEleven">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseEleven"
+                                        aria-expanded="false" aria-controls="collapseEleven">
+                                        <strong>How can you Drive home your dream car? - Card 11</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 11.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 12 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingTwelve">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseTwelve"
+                                        aria-expanded="false" aria-controls="collapseTwelve">
+                                        <strong>How can you Drive home your dream car? - Card 12</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 12.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 13 -->
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingThirteen">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseThirteen"
+                                        aria-expanded="false" aria-controls="collapseThirteen">
+                                        <strong>How can you Drive home your dream car? - Card 13</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 13.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2" style="border:1px solid rgba(0, 0, 0, 0.34);border-radius:7px;">
+                            <div class="card-header d-flex align-items-center position-relative"
+                                style="border: 0; background-color:transparent" id="headingFourteen">
+                                <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFourteen"
+                                        aria-expanded="false" aria-controls="collapseFourteen">
+                                        <strong>How can you Drive home your dream car? - Card 14</strong>
+                                        <div class="add-sub position-absolute"
+                                            style="top:50%; right:15px; transform:translateY(-50%)">
+                                            <i class="fa-solid fa-plus" style="display: block;"></i>
+                                            <i class="fa-solid fa-minus" style="display: none;"></i>
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                data-parent="#accordion">
+                                <div class="card-body mx-2 px-4">
+                                    Content for card 14.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="road position-relative mt-5" id="car-run" style="height: fit-content; width:auto; overflow:hidden ">
+        <img style="" src="./images/Group 142869.svg" alt="">
+        <div class="position-absolute car" style="top:50%; left:0% ; transform:translate(0%,-50%)">
+            <img src="./images/Layer_1.svg" style="height: 85%;" alt="">
+        </div>
+        <div class="position-absolute car" style="top:50%; left:40% ; transform:translate(-40%,-50%)">
+            <img src="./images/white car.svg" style="height: 85%;" alt="">
+        </div>
+    </div>
+    <section style="    background-color: #050b20;">
+        <div class="container my-4 py-5">
+            <div class="row">
+                <div class="col-lg-6 position-relative p-3 px-4">
+                    <img class="w-100 h-100"
+                        src="https://s3-alpha-sig.figma.com/img/ec5b/5290/ccf5ef761f6705ac552d70f26ee67aa5?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=csV9YUaSdbwoZG0Baa8sNGmiyvFV~28OZdmXHxOKzjxspQrB2k2tVcjCvxUry1N2FT0QW0CO1WhFIitrc~XeNbpyfClVMpJZ0-y8usljfig69ElTzteyRZLtQ9tzQj1UNamoP7RpPVWHczUOjRDpm4baFTI9ta5sb7p2jeOuCE37RjSL28Xe0iyqcnu~2loj0ZBXdI3CUGHxYHyImFzMiPXz~shOKH-~UWCdDkuuoTjWFARlT4v2qL~uXIwtTORK52JNI~Vw4w5ihJCFQFMQpIRcAqem6bJo5u3doIDUmiG4xZ6AaUnsHehTPfpmQXJHNIDMekNxbkKq6ni6zbi66Q__"
+                        alt="">
+                </div>
+                <div class="col-lg-6 p-3 px-4 position-relative d-flex flex-column ">
+                    <div class="" style="flex-basis: 20%;">
+                        <p class="mt-1 mb-0 me-3 pb-0 car-road position-relative text-white">Vehicles You Needed? </p>
+                        <h2 class=" mb-0 pb-0 text-white" style="font-weight:500; ">Call us & Book your Dream Car!</h2>
+                    </div>
+                    <form class="w-100 flex-grow-9 mt-2" action="" style="flex-basis:80%">
+                        <div class="container position-relative h-100 w-100">
+                            <div class="row w-100 h-100 align-items-around justify-content-around">
+                                <div
+                                    class="col-md-6 position-relative d-flex align-items-center justify-content-center mt-4">
+                                    <input type="text" name="" id="" class="input" placeholder="Enter Your Name">
+                                </div>
+                                <div
+                                    class="col-md-6 position-relative d-flex align-items-center justify-content-center mt-4">
+                                    <input type="text" name="" id=" " class="input" placeholder="Enter Email ID">
+                                </div>
+                                <div
+                                    class="col-md-6 position-relative d-flex align-items-center justify-content-center mt-4">
+                                    <input type="text" name="" id="" class="input" placeholder="Enter Phone Number">
+                                </div>
+                                <div
+                                    class="col-md-6 position-relative d-flex align-items-center justify-content-center mt-4">
+                                    <input type="text" name="" id="" class="input" placeholder="Enter Your Address">
+                                </div>
+                                <div
+                                    class="col-md-12 position-relative d-flex align-items-center justify-content-center mt-4">
+                                    <textarea name="" id="" cols="30" class="input" rows="1"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div
+                                    class="col-md-12 position-relative d-flex align-items-center justify-content-start mt-4 ">
+                                    <button type="submit " class="btn btn-light px-3 py-2"
+                                        style="border-radius: 40px;">Submit Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style=" position:relative; background-color: #050b20; color:#F1F1F1">
+        <!-- <div class="position-absolute " style="width: 100%; height:100%; top:0%; left:0%; z-index:4">
+            <img src="./images/Layer_1.png" class=" w-100 h-100 position-relative" alt="">
+        </div> -->
+
+        <div class="container p-4"
+            style="background:url(./images/Layer_1.png); background-size:contain; background-position:center">
+            <div class="row my-4 h-100">
+                <div class="col-lg-5 py-5 px-3" style="display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                ">
+                    <p class="text-white  pb-1 mb-1 dms" style="font-size: smaller;">Research has had a very large
+                        influence
+                        on my
+                        life. I have learned most of
+                        what I know through research.</p>
+                    <h4 class="text-white ld">
+                        NewsLetter
+                    </h4>
+                    <form action="" class="d-flex mb-1 dms">
+                        <input id="subs-email" class="my-1 px-4 input" type="text" placeholder="Your Email Id">
+                        <button id="subs-button" class="my-1 px-3" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white mx-2 dms" style="font-size: smaller;">Your email is safe with us, we don't
+                        spam.
+                        Privacy
+                        Policy
+                    </p>
+                </div>
+                <div class="col-lg-7 d-flex flex-column ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Address
+                                </strong>
+                                <p class="mt-2 dms">#1, 1st Street, Dubai, UAE</p>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Quick Links
+                                </strong>
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Contact</a>
+                                <a href="">Cart</a>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms">
+                                <strong class="ld fw-bold">
+                                    Popular Brands
+                                </strong>
+                                <a href="">bugatti</a>
+                                <a href="">BMW</a>
+                                <a href="">Benz</a>
+                                <a href="">Audi</a>
+                            </div>
+                        </div>
+                        <hr class="py-0 my-0 footer-horizontal" />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+
+                                        <strong class="ld fw-bold">
+                                            Branches
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column justify-content-around px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+                                        <div> <strong class="ld fw-bold">
+
+                                                Call Center
+                                            </strong>
+                                            <p>2345 59786</p>
+                                        </div>
+                                        <div> <strong class="ld fw-bold">
+
+                                                Follow Us
+                                            </strong>
+                                            <div class="d-flex w-100 mt-2 social-footer">
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 mds">
+                                        <strong class="ld fw-bold">
+                                            UAE
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-horizontal" />
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        document.querySelectorAll('[data-toggle="collapse"]').forEach(button => {
+            button.addEventListener('click', function () {
+                const addSubIcons = this.querySelector('.add-sub');
+                const plusIcon = addSubIcons.querySelector('.fa-plus');
+                const minusIcon = addSubIcons.querySelector('.fa-minus');
+                const target = document.querySelector(this.dataset.target);
+
+                if (target.classList.contains('show')) {
+                    plusIcon.style.display = 'block';
+                    minusIcon.style.display = 'none';
+                } else {
+                    plusIcon.style.display = 'none';
+                    minusIcon.style.display = 'block';
+                }
+            });
+        });
+        const element = document.getElementById("car-run"); // Use a singular name since it's one element
+        const className = "in-view";
+        const threshold = 1;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        element.classList.add(className);
+                    } else {
+                        element.classList.remove(className);
+                    }
+                });
+            },
+            {
+                threshold: threshold
+            }
+        );
+
+        if (element) {
+            observer.observe(element); // Start observing if the element exists
+        }
+    </script>
+</body>
+
+
+</html>

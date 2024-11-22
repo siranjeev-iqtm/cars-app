@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header-1 d-flex flex-column justify-content-around py-2 ld">
+        <div class=" justify-content-between align-items-center px-5 w-100 header-pc" style="height:20%">
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 "><i class="fa-solid fa-phone me-2"></i> info@example.com</p>
+                <p class="mx-3 mb-0">|</p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> UAE</p>
+            </div>
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 ">Help</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Support</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Customer</p>
+
+                <a href="" class="mx-1 ms-3 text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="mx-1 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="ms-1 text-white"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+        <div class=" d-flex px-5 w-100 justify-content-between align-items-center " style="height:60%">
+            <div class="toggle " id="toggler" onclick="opennavipanel()">
+                <div></div>
+            </div>
+            <div class="px-2  align-items-center text-white header-pc">
+                <div class="px-2 me-3  fs-4  text-white ">
+                    LOGO
+                </div>
+                <select class="px-2 py-1 rounded mx-2" style="width:150px" aria-label="Default select example">
+                    <option selected>Select Origin</option>
+                    <option value="downtown">Downtown Dubai</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="jbr">Jumeirah Beach Residence (JBR)</option>
+                    <option value="jlt">Jumeirah Lakes Towers (JLT)</option>
+                    <option value="deira">Deira</option>
+                    <option value="bur-dubai">Bur Dubai</option>
+                    <option value="jumeirah">Jumeirah</option>
+                    <option value="al-barsha">Al Barsha</option>
+                    <option value="business-bay">Business Bay</option>
+                    <option value="palm-jumeirah">Palm Jumeirah</option>
+                    <option value="al-quoz">Al Quoz</option>
+                    <option value="mirdif">Mirdif</option>
+                    <option value="satwa">Satwa</option>
+                    <option value="karama">Karama</option>
+                    <option value="nad-al-sheba">Nad Al Sheba</option>
+                    <option value="discovery-gardens">Discovery Gardens</option>
+                    <option value="emirates-hills">Emirates Hills</option>
+                </select>
+                <a href="./index.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Home</a>
+                <a href="./about.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">About</a>
+                <a href="./" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Shop</a>
+                <a href="./listings.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Listings</a>
+                <a class="fs-6 mb-0 mx-3 text-decoration-none text-white" href="./contact.html">Contact Us</a>
+
+            </div>
+            <div class="px-2">
+                <a class=" text-white d-flex align-items-center text-decoration-none">
+                    <i class="fa-regular fa-user fs-6"></i>
+                    <p class="fs-6 mb-0 ms-2"> Hi, User</p>
+                    <i class="fa-solid fa-caret-down ms-2 fs-7 mt-1"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="menu-mob d-flex flex-column align-items-center py-2" id="mobMenu">
+        <a href="./index.html" class="fs-6  mx-3 my-2 w-100 text-decoration-none text-white text-center py-2 ">Home</a>
+        <a href="./about.html" class="fs-6  mx-3 my-2 text-decoration-none w-100 py-2 text-center text-white">About</a>
+        <a href="./" class="fs-6 mx-3 my-2 text-decoration-none w-100 text-center py-2 text-white">Shop</a>
+        <a href="./listings.html"
+            class="fs-6  mx-3 my-2 w-100 text-center py-2 text-decoration-none text-white">Listings</a>
+        <a class="fs-6 mx-3 text-decoration-none my-2 w-100 text-center py-2 text-white" href="./contact.html">Contact
+            Us</a>
+    </div>
+    <section style="background-color: #050b20; height:35vh; width:100vw; margin-top:110px; position:relative
+    ">
+        <div class="position-absolute flex-column  h-100 w-100 d-flex align-items-center justify-content-center"
+            style="">
+            <p class="mb-2 me-3 pb-1 car-road-1 position-relative text-center text-white me-4"><a href="./index.html"
+                    class="text-white text-decoration-none dms">Home</a> - Contact<i
+                    class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+            <h1 class="mb-1 text-center text-white ld" style="font-weight: bold; font-size:35px">Contact Us</h1>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-2 py-4 dms">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 position-relative pe-0 mt-2 d-flex flex-column justify-content-end">
+                    <h2 class="px-5">Any questions?
+                        Say “Hi” Our
+                        Expertise Will
+                        Help You</h2>
+                    <img style="width:280px; align-self:flex-end" class="mt-4" src="./images/Calls Faq (2).png" alt="">
+                </div>
+                <div class="col-lg-3 ps-0 d-flex mt-2 flex-column position-relative justify-content-end">
+                    <img class="w-100" style="border-radius: 7px;"
+                        src="https://s3-alpha-sig.figma.com/img/9ac4/4ffe/c4bf673b60fea460de25dc0147746124?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ekiccbXsRSseKecWcYiJJ6PHs4~4NSLzFKZtMxYRLE-DsSayj42JNi~LB7DBHZ-XxaPgb0cs5yqCDRqNayugguapoILNR9-bWwEm~pVFjxBJK9mHbiUcceavRGjLsbln5RfiVBsRdXgg3TayaFKZsaObx96eJZl2~0c83lxTz5C9fkcLdlt2WYUZcXmyCJzeUip2sltAECT2uJNpdEV66~sh84M4qbI0WnW03I2P-8PhkWZEAc8Eye29Gr3z~uwjwBLgXYNYxS8Os5NJ7Ik~SyOnFkbulAN7vmpanu1trxN50IS53dGR1iqLiQBfTAcqJA7ETKcNX1WaehHYaDBVDg__"
+                        alt="">
+                    <div class="w-100 py-2 px-3 text-white mt-3" style="background-color: #050b20; border-radius:7px">
+                        <h5>Focus to get Quotation</h5>
+                        <p class="mb-0 ">+81 98765 98765</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2 position-relative">
+                    <img class="w-100" style="border-radius: 7px;"
+                        src="https://s3-alpha-sig.figma.com/img/78d1/92bf/0803a95d0220ee01b95b5b575e54deab?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SHi1MDXv3LXaXglFUiURHJoe0hh46OCKvz2RzZVh2MevwKnKQEhWT4A5Z3E8l8WMoiVFNY1nrUzrBSFUbUAaOG0MuPO0TZmlwKlEacqod8OzmXRX8ZtmQyov4oTOBN8IZJOagpjqHkYWXORx52ud7BmfchCcw1ZTuGuYHa7Qn8ZlhbOa9cMtBSULK7VZIcuDavze~JdowbJcHuwB740HxzPFmXz~gWf3Bg7JNA11IDtDMLqxZhV7FtCwdfxmOmpBx4F-z3Y9VsHhFdIyI1PV2lcRLW4JhFs57-oYs5XnT7Xkgb4UYFKbHpH4BQk5UU5aoXnexp6bNTFGVXpSdJAtqQ__"
+                        alt="">
+                    <img class="w-100 mt-3" style="border-radius: 7px;"
+                        src="https://s3-alpha-sig.figma.com/img/a4c8/e8e4/8a814353bd9f0a6b4018d05b13d00217?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gIBOGTGSipfG2rhxrdnKfXSAdxKRpkqO4WGak53dF9bYdeMaVULjctnxwyPTb0LFDAJ6un1Hwio3l7UBBoz0-Syv8Wm6wN8SnKv0J0-vfqYRz7bh4zilS0wf5DR92ZerDXUUMxDjtPabaL1LDzG~JEJpSLymvDUIkPilqLGd~vQErS-BR1PYOWlmgHGRJ-vfUlplMt3-ZJoU1bD06TR0TpIZWK4q-hVjh7b8j4DITGcUzWSC2Od0AKQGWG6dnNrWXkfcrw~2a6qrwaZFZfub7n851TvnbiAMdrujVaawAYUyXJdCVCO8g5wvMlFSNjOjv~bswxpq2DwSxTQSor2lPw__"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Customer Reviews</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="container my-3 inter">
+            <div class="row">
+                <div class="col-lg-3 position-relative">
+                    <div class="feature-card flex-column mt-3"
+                        style="height:340px; background-color:#050b20; border-radius:7px; overflow:hidden">
+                        <div class="position-absolute w-100" style="top:50%; transform:translateY(-50%)">
+                            <img class="w-100 " src="./images/f65f2cf58b0f957b19b3aa998e1bae90.svg fill.png" alt="">
+                        </div>
+                        <img style="height:140px; width:100%; object-fit:cover;"
+                            src="https://s3-alpha-sig.figma.com/img/a4c8/e8e4/8a814353bd9f0a6b4018d05b13d00217?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gIBOGTGSipfG2rhxrdnKfXSAdxKRpkqO4WGak53dF9bYdeMaVULjctnxwyPTb0LFDAJ6un1Hwio3l7UBBoz0-Syv8Wm6wN8SnKv0J0-vfqYRz7bh4zilS0wf5DR92ZerDXUUMxDjtPabaL1LDzG~JEJpSLymvDUIkPilqLGd~vQErS-BR1PYOWlmgHGRJ-vfUlplMt3-ZJoU1bD06TR0TpIZWK4q-hVjh7b8j4DITGcUzWSC2Od0AKQGWG6dnNrWXkfcrw~2a6qrwaZFZfub7n851TvnbiAMdrujVaawAYUyXJdCVCO8g5wvMlFSNjOjv~bswxpq2DwSxTQSor2lPw__"
+                            alt="">
+                        <div style="width: 100%; height:200px;"
+                            class="px-3 py-2 d-flex flex-column justify-content-around">
+                            <h5 class="fw-light text-white feature-heading position-relative "
+                                style="width: fit-content;">Buy</h5>
+                            <h5 class=" text-white fw-bold">Drive home your dream car</h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/c8b93437-e316-432d-99cd-573422cc42fe-140-quality-checks.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">140 Quality Checks</p>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/296791eb-eedf-40e3-8b24-5db28093b67e-7-day-returns.svg.svg"
+                                        alt="">
+                                    <p style="font-size: x-small;" class="text-white mb-0 ms-1">7 - Days Return</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <img src="./images/cb514a30-d52f-4a1b-977b-b37915171666-Finance-your-way.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Finance it
+                                        your way</p>
+                                </div>
+                            </div>
+                            <a href="" class="px-3 py-1 text-center text-white text-decoration-none "
+                                style="background-color:rgba(255, 255, 255, 0.318); border-radius:7px; font-size:smaller">
+                                Buy new Car
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="feature-card flex-column mt-3"
+                        style="height:340px; background-color:#050b20; border-radius:7px; overflow:hidden">
+                        <div class="position-absolute w-100" style="top:50%; transform:translateY(-50%)">
+                            <img class="w-100 " src="./images/f65f2cf58b0f957b19b3aa998e1bae90.svg fill.png" alt="">
+                        </div>
+                        <img style="height:140px; width:100%; object-fit:cover;"
+                            src="https://s3-alpha-sig.figma.com/img/78d1/92bf/0803a95d0220ee01b95b5b575e54deab?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SHi1MDXv3LXaXglFUiURHJoe0hh46OCKvz2RzZVh2MevwKnKQEhWT4A5Z3E8l8WMoiVFNY1nrUzrBSFUbUAaOG0MuPO0TZmlwKlEacqod8OzmXRX8ZtmQyov4oTOBN8IZJOagpjqHkYWXORx52ud7BmfchCcw1ZTuGuYHa7Qn8ZlhbOa9cMtBSULK7VZIcuDavze~JdowbJcHuwB740HxzPFmXz~gWf3Bg7JNA11IDtDMLqxZhV7FtCwdfxmOmpBx4F-z3Y9VsHhFdIyI1PV2lcRLW4JhFs57-oYs5XnT7Xkgb4UYFKbHpH4BQk5UU5aoXnexp6bNTFGVXpSdJAtqQ__"
+                            alt="">
+                        <div style="width: 100%; height:200px;"
+                            class="px-3 py-2 d-flex flex-column justify-content-around">
+                            <h5 class="fw-light text-white feature-heading position-relative "
+                                style="width: fit-content;">Sell</h5>
+                            <h5 class=" text-white fw-bold">Trust us to sell your car </h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/c8b93437-e316-432d-99cd-573422cc42fe-140-quality-checks.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Great
+                                        price</p>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/296791eb-eedf-40e3-8b24-5db28093b67e-7-day-returns.svg.svg"
+                                        alt="">
+                                    <p style="font-size: x-small;" class="text-white mb-0 ms-1">Instant
+                                        payment</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <img src="./images/cb514a30-d52f-4a1b-977b-b37915171666-Finance-your-way.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Hassle-free
+                                        documentation</p>
+                                </div>
+                            </div>
+                            <a href="" class="px-3 py-1 text-center text-white text-decoration-none "
+                                style="background-color:rgba(255, 255, 255, 0.318); border-radius:7px; font-size:smaller">
+                                Get Car Price
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="feature-card flex-column mt-3"
+                        style="height:340px; background-color:#050b20; border-radius:7px; overflow:hidden">
+                        <div class="position-absolute w-100" style="top:50%; transform:translateY(-50%)">
+                            <img class="w-100 " src="./images/f65f2cf58b0f957b19b3aa998e1bae90.svg fill.png" alt="">
+                        </div>
+                        <img style="height:140px; width:100%; object-fit:cover;"
+                            src="https://s3-alpha-sig.figma.com/img/a4c8/e8e4/8a814353bd9f0a6b4018d05b13d00217?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gIBOGTGSipfG2rhxrdnKfXSAdxKRpkqO4WGak53dF9bYdeMaVULjctnxwyPTb0LFDAJ6un1Hwio3l7UBBoz0-Syv8Wm6wN8SnKv0J0-vfqYRz7bh4zilS0wf5DR92ZerDXUUMxDjtPabaL1LDzG~JEJpSLymvDUIkPilqLGd~vQErS-BR1PYOWlmgHGRJ-vfUlplMt3-ZJoU1bD06TR0TpIZWK4q-hVjh7b8j4DITGcUzWSC2Od0AKQGWG6dnNrWXkfcrw~2a6qrwaZFZfub7n851TvnbiAMdrujVaawAYUyXJdCVCO8g5wvMlFSNjOjv~bswxpq2DwSxTQSor2lPw__"
+                            alt="">
+                        <div style="width: 100%; height:200px;"
+                            class="px-3 py-2 d-flex flex-column justify-content-around">
+                            <h5 class="fw-light text-white feature-heading position-relative "
+                                style="width: fit-content;">Find Car Valuation</h5>
+                            <h5 class=" text-white fw-bold">Fast process, good price</h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/c8b93437-e316-432d-99cd-573422cc42fe-140-quality-checks.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">140 Quality Checks</p>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/296791eb-eedf-40e3-8b24-5db28093b67e-7-day-returns.svg.svg"
+                                        alt="">
+                                    <p style="font-size: x-small;" class="text-white mb-0 ms-1">7 - Days Return</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <img src="./images/cb514a30-d52f-4a1b-977b-b37915171666-Finance-your-way.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Finance it
+                                        your way</p>
+                                </div>
+                            </div>
+                            <a href="" class="px-3 py-1 text-center text-white text-decoration-none "
+                                style="background-color:rgba(255, 255, 255, 0.318); border-radius:7px; font-size:smaller">
+                                View All Cars
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="feature-card flex-column mt-3"
+                        style="height:340px; background-color:#050b20; border-radius:7px; overflow:hidden">
+                        <div class="position-absolute w-100" style="top:50%; transform:translateY(-50%)">
+                            <img class="w-100 " src="./images/f65f2cf58b0f957b19b3aa998e1bae90.svg fill.png" alt="">
+                        </div>
+                        <img style="height:140px; width:100%; object-fit:cover;"
+                            src="https://s3-alpha-sig.figma.com/img/78d1/92bf/0803a95d0220ee01b95b5b575e54deab?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SHi1MDXv3LXaXglFUiURHJoe0hh46OCKvz2RzZVh2MevwKnKQEhWT4A5Z3E8l8WMoiVFNY1nrUzrBSFUbUAaOG0MuPO0TZmlwKlEacqod8OzmXRX8ZtmQyov4oTOBN8IZJOagpjqHkYWXORx52ud7BmfchCcw1ZTuGuYHa7Qn8ZlhbOa9cMtBSULK7VZIcuDavze~JdowbJcHuwB740HxzPFmXz~gWf3Bg7JNA11IDtDMLqxZhV7FtCwdfxmOmpBx4F-z3Y9VsHhFdIyI1PV2lcRLW4JhFs57-oYs5XnT7Xkgb4UYFKbHpH4BQk5UU5aoXnexp6bNTFGVXpSdJAtqQ__"
+                            alt="">
+                        <div style="width: 100%; height:200px;"
+                            class="px-3 py-2 d-flex flex-column justify-content-around">
+                            <h5 class="fw-light text-white feature-heading position-relative "
+                                style="width: fit-content;">FINANCE</h5>
+                            <h5 class=" text-white fw-bold">Make your dream car a
+                                reality </h5>
+                            <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/c8b93437-e316-432d-99cd-573422cc42fe-140-quality-checks.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Great
+                                        price</p>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <img src="./images/296791eb-eedf-40e3-8b24-5db28093b67e-7-day-returns.svg.svg"
+                                        alt="">
+                                    <p style="font-size: x-small;" class="text-white mb-0 ms-1">Instant
+                                        payment</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <img src="./images/cb514a30-d52f-4a1b-977b-b37915171666-Finance-your-way.svg.svg"
+                                        alt="">
+                                    <p style="font-size:x-small;" class="text-white mb-0 ms-1">Hassle-free
+                                        documentation</p>
+                                </div>
+                            </div>
+                            <a href="" class="px-3 py-1 text-center text-white text-decoration-none "
+                                style="background-color:rgba(255, 255, 255, 0.318); border-radius:7px; font-size:smaller">
+                                Check eligibility in 2 Mins
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="mb-2 me-3 pb-1 car-road position-relative dms">About Our history <i
+                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                    <h2 class="  pb-0 ld" style="font-weight: bold; ">Get In Touch With Us</h2>
+                    <p class="w-75 dms">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet fugit nam
+                        tempora aliquam
+                        accusantium.
+                    </p>
+                    <form action="" class="d-flex flex-column dms">
+                        <div class="row w-100">
+                            <div class="position-relative col-lg-6 px-2 mt-3">
+                                <label for="name" class="contact-label mx-3 mt-2">Enter your name *</label>
+                                <input type="text" id="name" class="contact-input px-3 pb-2 w-100"
+                                    style="padding-top: 2.5rem;">
+                            </div>
+                            <div class="position-relative col-lg-6 px-2 mt-3">
+                                <label for="name" class="contact-label mx-3 mt-2">Enter your mail *</label>
+                                <input type="email" id="email" class="contact-input px-3  pb-2 w-100"
+                                    style="padding-top: 2.5rem;">
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="position-relative col-lg-6 px-2 mt-3">
+                                <label for="name" class="contact-label mx-3 mt-2">Enter your Number *</label>
+                                <input type="number" id="number" class="contact-input px-3 pb-2 w-100"
+                                    style="padding-top: 2.5rem;">
+                            </div>
+                            <div class="position-relative col-lg-6 px-2 mt-3">
+                                <label for="name" class="contact-label mx-3 mt-2">Subject *</label>
+                                <input type="text" id="email" class="contact-input px-3  pb-2 w-100"
+                                    style="padding-top: 2.5rem;">
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="position-relative col-lg-12 px-2 mt-3 w-100">
+                                <label for="message" class="contact-label mx-3 mt-2">Enter your Number *</label>
+                                <textarea name="" id="message" class="contact-input w-100" cols="30"
+                                    rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="position-relative mt-3">
+                            <button type="submit" class=" text-white p-5 py-2 me-2" style="border-radius: 50px;border: 0.5px solid rgba(0, 0, 0, 0.373) ;background-color:black
+                        ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 py-2 dms">
+                    <div class="d-flex flex-column h-100 px-4 py-3 justify-content-around"
+                        style=" border: 0.5px solid rgba(0, 0, 0, 0.373); border-radius:7px">
+                        <h2 class="pb-0 fs-3 mb-0 ld " style="font-weight: bold; ">We Have Been Waiting
+                            For You!</h2>
+                        <p class="mb-0 dms">Etiam pharetra egestas interdum blandit viverra morbi
+                            consequat mi non bibendum
+                        </p>
+                        <div class="d-flex">
+                            <img src="./images/Group 81.svg" style="width:40px" class="me-3" alt="">
+                            <div>
+                                <p style="font-size: smaller;" class="mb-0">UAE: Dubai, Saudi Arabia, Sharjah</p>
+                                <p style="font-size: smaller;" class="mb-0">Others: USA, India</p>
+
+                            </div>
+                        </div>
+                        <hr class="my-0 py-0">
+                        <div class="d-flex">
+                            <img src="./images/Group 80.svg" style="width:40px" class="me-3" alt="">
+                            <div>
+                                <p style="font-size: smaller;" class="mb-0">info@example.com</p>
+                                <p style="font-size: smaller;" class="mb-0">contact@example.com</p>
+
+                            </div>
+                        </div>
+                        <hr class="my-0 py-0">
+                        <div class="d-flex">
+                            <img src="./images/Group 79.svg" style="width:40px" class="me-3" alt="">
+                            <div>
+                                <p style="font-size: smaller;" class="mb-0">+81 122345 3552</p>
+                                <p style="font-size: smaller;" class="mb-0">+91 123 2345 123</p>
+
+                            </div>
+                        </div>
+                        <hr class="my-0 py-0">
+                        <div class="d-flex">
+                            <img src="./images/Group 82.png" style="width:40px" class="me-3" alt="">
+                            <div>
+                                <p style="font-size: smaller;" class="mb-0">Mon - Sat : 9am to 6pm</p>
+                                <p style="font-size: smaller;" class="mb-0">Sun : Closed</p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="pb-0 fs-4 " style="font-weight: bold; ">Follow Us</h2>
+                            <div class="d-flex">
+                                <a href="" class="mx-1 text-dark"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="mx-1 text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="" class="ms-1 text-dark"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style=" position:relative; background-color: #050b20; color:#F1F1F1">
+        <!-- <div class="position-absolute " style="width: 100%; height:100%; top:0%; left:0%; z-index:4">
+            <img src="./images/Layer_1.png" class=" w-100 h-100 position-relative" alt="">
+        </div> -->
+
+        <div class="container p-4"
+            style="background:url(./images/Layer_1.png); background-size:contain; background-position:center">
+            <div class="row my-4 h-100">
+                <div class="col-lg-5 py-5 px-3" style="display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                ">
+                    <p class="text-white  pb-1 mb-1 dms" style="font-size: smaller;">Research has had a very large
+                        influence
+                        on my
+                        life. I have learned most of
+                        what I know through research.</p>
+                    <h4 class="text-white ld">
+                        NewsLetter
+                    </h4>
+                    <form action="" class="d-flex mb-1 dms">
+                        <input id="subs-email" class="my-1 px-4 input" type="text" placeholder="Your Email Id">
+                        <button id="subs-button" class="my-1 px-3" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white mx-2 dms" style="font-size: smaller;">Your email is safe with us, we don't
+                        spam.
+                        Privacy
+                        Policy
+                    </p>
+                </div>
+                <div class="col-lg-7 d-flex flex-column ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Address
+                                </strong>
+                                <p class="mt-2 dms">#1, 1st Street, Dubai, UAE</p>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Quick Links
+                                </strong>
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Contact</a>
+                                <a href="">Cart</a>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms">
+                                <strong class="ld fw-bold">
+                                    Popular Brands
+                                </strong>
+                                <a href="">bugatti</a>
+                                <a href="">BMW</a>
+                                <a href="">Benz</a>
+                                <a href="">Audi</a>
+                            </div>
+                        </div>
+                        <hr class="py-0 my-0 footer-horizontal" />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+
+                                        <strong class="ld fw-bold">
+                                            Branches
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column justify-content-around px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+                                        <div> <strong class="ld fw-bold">
+
+                                                Call Center
+                                            </strong>
+                                            <p>2345 59786</p>
+                                        </div>
+                                        <div> <strong class="ld fw-bold">
+
+                                                Follow Us
+                                            </strong>
+                                            <div class="d-flex w-100 mt-2 social-footer">
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 mds">
+                                        <strong class="ld fw-bold">
+                                            UAE
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-horizontal" />
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>

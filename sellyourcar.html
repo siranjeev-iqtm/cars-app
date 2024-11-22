@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header-1 d-flex flex-column justify-content-around py-2 ld">
+        <div class=" justify-content-between align-items-center px-5 w-100 header-pc" style="height:20%">
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 "><i class="fa-solid fa-phone me-2"></i> info@example.com</p>
+                <p class="mx-3 mb-0">|</p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> UAE</p>
+            </div>
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 ">Help</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Support</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Customer</p>
+
+                <a href="" class="mx-1 ms-3 text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="mx-1 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="ms-1 text-white"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+        <div class=" d-flex px-5 w-100 justify-content-between align-items-center " style="height:60%">
+            <div class="toggle " id="toggler" onclick="opennavipanel()">
+                <div></div>
+            </div>
+            <div class="px-2  align-items-center text-white header-pc">
+                <div class="px-2 me-3  fs-4  text-white ">
+                    LOGO
+                </div>
+                <select class="px-2 py-1 rounded mx-2" style="width:150px" aria-label="Default select example">
+                    <option selected>Select Origin</option>
+                    <option value="downtown">Downtown Dubai</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="jbr">Jumeirah Beach Residence (JBR)</option>
+                    <option value="jlt">Jumeirah Lakes Towers (JLT)</option>
+                    <option value="deira">Deira</option>
+                    <option value="bur-dubai">Bur Dubai</option>
+                    <option value="jumeirah">Jumeirah</option>
+                    <option value="al-barsha">Al Barsha</option>
+                    <option value="business-bay">Business Bay</option>
+                    <option value="palm-jumeirah">Palm Jumeirah</option>
+                    <option value="al-quoz">Al Quoz</option>
+                    <option value="mirdif">Mirdif</option>
+                    <option value="satwa">Satwa</option>
+                    <option value="karama">Karama</option>
+                    <option value="nad-al-sheba">Nad Al Sheba</option>
+                    <option value="discovery-gardens">Discovery Gardens</option>
+                    <option value="emirates-hills">Emirates Hills</option>
+                </select>
+                <a href="./index.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Home</a>
+                <a href="./about.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">About</a>
+                <a href="./" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Shop</a>
+                <a href="./listings.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Listings</a>
+                <a class="fs-6 mb-0 mx-3 text-decoration-none text-white" href="./contact.html">Contact Us</a>
+
+            </div>
+            <div class="px-2">
+                <a class=" text-white d-flex align-items-center text-decoration-none">
+                    <i class="fa-regular fa-user fs-6"></i>
+                    <p class="fs-6 mb-0 ms-2"> Hi, User</p>
+                    <i class="fa-solid fa-caret-down ms-2 fs-7 mt-1"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="menu-mob d-flex flex-column align-items-center py-2" id="mobMenu">
+        <a href="./index.html" class="fs-6  mx-3 my-2 w-100 text-decoration-none text-white text-center py-2 ">Home</a>
+        <a href="./about.html" class="fs-6  mx-3 my-2 text-decoration-none w-100 py-2 text-center text-white">About</a>
+        <a href="./" class="fs-6 mx-3 my-2 text-decoration-none w-100 text-center py-2 text-white">Shop</a>
+        <a href="./listings.html"
+            class="fs-6  mx-3 my-2 w-100 text-center py-2 text-decoration-none text-white">Listings</a>
+        <a class="fs-6 mx-3 text-decoration-none my-2 w-100 text-center py-2 text-white" href="./contact.html">Contact
+            Us</a>
+    </div>
+    <section style="background-color: #050b20; height:35vh; width:100vw; margin-top:110px; position:relative
+    ">
+        <div class="position-absolute flex-column  h-100 w-100 d-flex align-items-center justify-content-center"
+            style="">
+            <p class="mb-2 me-3 pb-1 car-road-1 position-relative text-center text-white me-4"><a href="./index.html"
+                    class="text-white text-decoration-none dms">Home</a> - SYC<i
+                    class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+            <h1 class="mb-1 text-center text-white ld" style="font-weight: bold; font-size:35px">Sell Your Car</h1>
+        </div>
+    </section>
+    <section class="syc-main p-5 position-relative inter">
+        <div class="position-absolute w-100 h-100" style="background-color: #f1f1f17a; top:0; left:0">
+
+        </div>
+        <div class="container my-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 d-flex flex-column py-4  pb-5 px-3"
+                    style="background-color:#E5F0FA; border-radius:20px; border:2px solid black  ">
+                    <div class="d-flex justify-content-center my-2 mt-4">
+                        <h5 class="fw-bold mx-4">2024, Toyota Camry</h5>
+                        <h5>|</h5>
+                        <strong class="mx-4">25 Hybrld - 2nd Owner - 30,000KM - Chennai</strong>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center my-2 py-4 "
+                        style="border: 1px solid black;">
+                        <img style="height:18px"
+                            src="https://s3-alpha-sig.figma.com/img/283c/6999/c7d4eaaa6b764c448f462c85e58d5a89?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QKBt4mWsht~9hhY4R65Ut8AigvanknJ~S8XsI1sLifH00lf5iH9A9m-gnkL1NRmDbNJ0-3oOFrABd99r-KojxvrtQ9AoHlyreWxyx5PukDOR5Fmr1EJ-5JsjaUI2eVmv5OJAQUdoBax4Z1D4Vxwn6XFRL4RsodTvtz3mkJ7t-6~VAhKeu~-DsG2oCkpMn2iiHv84ImGcs8rGmwSTrdrE7slGLsGGnJgsMnCAIQaB0q29B-D-pUg4LbOoczursiowBK-yKQiLjBxtgBjWTprejsbYO8IggslgKa43HYqUjm-MKbuTWxN8A3mf8-Y0LhnAHUXZNgu1zSOuXiflALvRwA__"
+                            alt="">
+                        <p class=" mb-0 ms-2">Today, 500+ people listed their cars with us</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 position-relative">
+                            <h3 class="mt-5 fw-bold ">Enter your Selling Price</h3>
+                            <div class="w-100 bg-white py-4 px-5" style="border: 1.5px solid black; border-radius:10px">
+                                <strong style="color: #050b2064;">Recommended Price Range</strong>
+
+                                <div class="d-flex w-100 justify-content-between mt-4">
+                                    <h4 class=" fw-bolder dms">AED. 33,000</h4>
+                                    <h4 class=" fw-bolder dms ">AED. 60,000</h4>
+                                </div>
+                                <div class="mt-2 mb-3">
+                                    <div class="slider-1">
+                                        <div class="progress-1"></div>
+                                    </div>
+                                    <div class="range-input-1">
+
+                                        <input type="range" class="range-min" min="33000" max="60000" value="38490"
+                                            step="100">
+
+                                    </div>
+
+                                </div>
+                                <strong style="color: #050b2064;" class="">Good</strong>
+
+
+                            </div>
+                            <form action="" class="w-100 mt-2">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-6 position-relative mt-3">
+                                        <input class="w-100 p-3" type="number" name="" placeholder="Enter Selling Price"
+                                            id="">
+                                    </div>
+                                    <div class="col-md-6 position-relative mt-3">
+                                        <input class="w-100 p-3" type="tel" name="" id="" placeholder="+91 2345-2345">
+                                    </div>
+                                    <div class="col-md-6  position-relative mt-3">
+                                        <button type="submit" class="w-100 btn btn-dark p-3">Continue</button>
+                                    </div>
+                                    <div class="col-md-6   position-relative mt-3">
+                                        <div style="border: 1px solid black; width:100%; height:100%"
+                                            class="d-flex justify-content-between align-items-center p-2 px-2">
+                                            <div class="d-flex col-7 align-items-center">
+                                                <i class="fa-brands fa-whatsapp fs-3"></i>
+                                                <p class="mb-0 ms-2" style="font-size:x-small;">Get instant updates on
+                                                    your
+                                                    whatsapp
+                                                </p>
+                                            </div>
+                                            <div class="col-1">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section style="background-color: #F1F1F1;" class="py-5 pb-3 my-4">
+        <div class="container">
+            <div class="row dms">
+                <div class="col-lg-12">
+                    <h2 class=" pb-0 mb-2 text-center ld" style="font-weight: bold;  color:#252627">Why Sell To?</h2>
+                    <p class="text-center" style="font-weight: 500;  color:#8a8b8e">Sell your car at the highest value
+                        by
+                        directly
+                        connecting with genuine buyers,
+                        without the risk of spam.</p>
+
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Bought.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">50,000+</h2>
+                    <p class="text-center" style="font-weight: 500;">Cars Bought
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Dealers.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">3500+</h2>
+                    <p class="text-center" style="font-weight: 500;">Dealer's Network
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/RCTransfer.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">5000+</h2>
+                    <p class="text-center" style="font-weight: 500;">RCs Transfered</p>
+                    </p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column align-items-center p-4 mt-3" style="height:200px">
+                    <img style="width: 50px;" src="./images/Location.svg.png" alt="">
+                    <h2 class=" pb-0 mb-2 text-center fs-3" style="font-weight: 500;  color:#252627">100+</h2>
+                    <p class="text-center" style="font-weight: 500;">Servicable Locations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style=" position:relative; background-color: #050b20; color:#F1F1F1">
+        <!-- <div class="position-absolute " style="width: 100%; height:100%; top:0%; left:0%; z-index:4">
+            <img src="./images/Layer_1.png" class=" w-100 h-100 position-relative" alt="">
+        </div> -->
+
+        <div class="container p-4"
+            style="background:url(./images/Layer_1.png); background-size:contain; background-position:center">
+            <div class="row my-4 h-100">
+                <div class="col-lg-5 py-5 px-3" style="display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                ">
+                    <p class="text-white  pb-1 mb-1 dms" style="font-size: smaller;">Research has had a very large
+                        influence
+                        on my
+                        life. I have learned most of
+                        what I know through research.</p>
+                    <h4 class="text-white ld">
+                        NewsLetter
+                    </h4>
+                    <form action="" class="d-flex mb-1 dms">
+                        <input id="subs-email" class="my-1 px-4 input" type="text" placeholder="Your Email Id">
+                        <button id="subs-button" class="my-1 px-3" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white mx-2 dms" style="font-size: smaller;">Your email is safe with us, we don't
+                        spam.
+                        Privacy
+                        Policy
+                    </p>
+                </div>
+                <div class="col-lg-7 d-flex flex-column ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Address
+                                </strong>
+                                <p class="mt-2 dms">#1, 1st Street, Dubai, UAE</p>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Quick Links
+                                </strong>
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Contact</a>
+                                <a href="">Cart</a>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms">
+                                <strong class="ld fw-bold">
+                                    Popular Brands
+                                </strong>
+                                <a href="">bugatti</a>
+                                <a href="">BMW</a>
+                                <a href="">Benz</a>
+                                <a href="">Audi</a>
+                            </div>
+                        </div>
+                        <hr class="py-0 my-0 footer-horizontal" />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+
+                                        <strong class="ld fw-bold">
+                                            Branches
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column justify-content-around px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+                                        <div> <strong class="ld fw-bold">
+
+                                                Call Center
+                                            </strong>
+                                            <p>2345 59786</p>
+                                        </div>
+                                        <div> <strong class="ld fw-bold">
+
+                                                Follow Us
+                                            </strong>
+                                            <div class="d-flex w-100 mt-2 social-footer">
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 mds">
+                                        <strong class="ld fw-bold">
+                                            UAE
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-horizontal" />
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>

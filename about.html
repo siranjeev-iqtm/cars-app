@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header-1 d-flex flex-column justify-content-around py-2 ld">
+        <div class=" justify-content-between align-items-center px-5 w-100 header-pc" style="height:20%">
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 "><i class="fa-solid fa-phone me-2"></i> info@example.com</p>
+                <p class="mx-3 mb-0">|</p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> UAE</p>
+            </div>
+            <div class="d-flex text-white h-100 align-items-center mx-3">
+                <p class="mb-0 ">Help</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Support</p>
+                <p class="mx-2 mb-0">/</p>
+                <p class="mb-0">Customer</p>
+
+                <a href="" class="mx-1 ms-3 text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="mx-1 text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="ms-1 text-white"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+        <div class=" d-flex px-5 w-100 justify-content-between align-items-center " style="height:60%">
+            <div class="toggle " id="toggler" onclick="opennavipanel()">
+                <div></div>
+            </div>
+            <div class="px-2  align-items-center text-white header-pc">
+                <div class="px-2 me-3  fs-4  text-white ">
+                    LOGO
+                </div>
+                <select class="px-2 py-1 rounded mx-2" style="width:150px" aria-label="Default select example">
+                    <option selected>Select Origin</option>
+                    <option value="downtown">Downtown Dubai</option>
+                    <option value="marina">Dubai Marina</option>
+                    <option value="jbr">Jumeirah Beach Residence (JBR)</option>
+                    <option value="jlt">Jumeirah Lakes Towers (JLT)</option>
+                    <option value="deira">Deira</option>
+                    <option value="bur-dubai">Bur Dubai</option>
+                    <option value="jumeirah">Jumeirah</option>
+                    <option value="al-barsha">Al Barsha</option>
+                    <option value="business-bay">Business Bay</option>
+                    <option value="palm-jumeirah">Palm Jumeirah</option>
+                    <option value="al-quoz">Al Quoz</option>
+                    <option value="mirdif">Mirdif</option>
+                    <option value="satwa">Satwa</option>
+                    <option value="karama">Karama</option>
+                    <option value="nad-al-sheba">Nad Al Sheba</option>
+                    <option value="discovery-gardens">Discovery Gardens</option>
+                    <option value="emirates-hills">Emirates Hills</option>
+                </select>
+                <a href="./index.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Home</a>
+                <a href="./about.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">About</a>
+                <a href="./" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Shop</a>
+                <a href="./listings.html" class="fs-6 mb-0 mx-3 text-decoration-none text-white">Listings</a>
+                <a class="fs-6 mb-0 mx-3 text-decoration-none text-white" href="./contact.html">Contact Us</a>
+
+            </div>
+            <div class="px-2">
+                <a class=" text-white d-flex align-items-center text-decoration-none">
+                    <i class="fa-regular fa-user fs-6"></i>
+                    <p class="fs-6 mb-0 ms-2"> Hi, User</p>
+                    <i class="fa-solid fa-caret-down ms-2 fs-7 mt-1"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="menu-mob d-flex flex-column align-items-center py-2" id="mobMenu">
+        <a href="./index.html" class="fs-6  mx-3 my-2 w-100 text-decoration-none text-white text-center py-2 ">Home</a>
+        <a href="./about.html" class="fs-6  mx-3 my-2 text-decoration-none w-100 py-2 text-center text-white">About</a>
+        <a href="./" class="fs-6 mx-3 my-2 text-decoration-none w-100 text-center py-2 text-white">Shop</a>
+        <a href="./listings.html"
+            class="fs-6  mx-3 my-2 w-100 text-center py-2 text-decoration-none text-white">Listings</a>
+        <a class="fs-6 mx-3 text-decoration-none my-2 w-100 text-center py-2 text-white" href="./contact.html">Contact
+            Us</a>
+    </div>
+    <section style="background-color: #050b20; height:35vh; width:100vw; margin-top:110px; position:relative
+    ">
+        <div class="position-absolute flex-column  h-100 w-100 d-flex align-items-center justify-content-center"
+            style="">
+            <p class="mb-2 me-3 pb-1 car-road-1 position-relative text-center text-white me-4"><a href="./index.html"
+                    class="text-white text-decoration-none dms">Home</a> - About<i
+                    class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+            <h1 class="mb-1 text-center text-white ld" style="font-weight: bold; font-size:35px">About Us</h1>
+        </div>
+    </section>
+    <section>
+        <div class="position-absolute " style="transform: rotate('90deg'); top:40%; right:10%; pointer-events:none">
+            <img style="height:310px" src="./images/Car Seller.png" alt="">
+        </div>
+        <div class="container my-4 py-4">
+            <div class="row justify-content-start ">
+                <div class="col-lg-4 p-4 postion-relative" style="height: 400px; ">
+                    <img class="w-100 h-100 " style="object-fit: cover; object-position:left; border-radius:10px;"
+                        src="./images/aboutMain.png" alt="">
+                </div>
+                <div class="col-lg-6 p-4 position-relative dms">
+
+                    <p class="my-2 me-3 pb-1 car-road position-relative dms">About Us <i
+                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                    <h2 class=" mb-0 pb-0 ld" style="font-weight: bold; ">Your Dream Luxury Cars here</h2>
+                    <p class="mt-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit, dolorum repudiandae
+                        fugit culpa aliquam.
+                    </p>
+                    <div class="d-flex justify-content-around mt-4">
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+                        <p><i class="fa-solid fa-gear me-2"></i>Cleanliness & Comfort</p>
+
+                    </div>
+                    <div class="d-flex justify-content-start mt-3">
+                        <a href="" class=" position-relative text-decoration-none text-white p-3 py-2 me-2" style="border-radius: 50px;     border: 0.5px solid rgba(0, 0, 0, 0.373) ;background-color:black
+                        ">View More</a>
+                        <a href="" class=" position-relative text-decoration-none text-black p-3 py-2 me-2" style="border-radius: 50px;     border: 0.5px solid rgba(0, 0, 0, 0.373);
+                        ">View All Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #050b20;" class="py-5
+    ">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-lg-7 d-flex flex-column align-items-center">
+                    <p class="mb-2 me-3 pb-1 car-road-1 position-relative text-white dms">Simple 4 Easy Steps <i
+                            class="fa-solid fa-car-side fa-car-side-1 ps-2 fs-5"></i></p>
+                    <h2 class=" mb-0 pb-0 text-center text-white ld" style="font-weight: bold; ">Our Buying & Selling
+                        Process</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container logo-card-scroll px-5 mt-4 dms">
+            <div class="row mx-3 flex-wrap overflow-hidden">
+                <div class="col-lg-3 about-card p-1 d-flex justify-content-center align-items-center">
+                    <div
+                        class="abt-cont p-3 py-4 text-white d-flex flex-column align-items-center justify-content-around">
+                        <img src="./images/_Ã«Ã®Ã©_1.png" style="width:70px; height:70px" alt="">
+                        <p>Search Car</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 about-card p-1 d-flex justify-content-center align-items-center">
+                    <div
+                        class="abt-cont p-3 py-4 text-white d-flex flex-column align-items-center justify-content-around">
+                        <img src="./images/_Ã«Ã®Ã©_1 (1).png" style="width:70px; height:70px" alt="">
+                        <p>Select Car</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 about-card p-1 d-flex justify-content-center align-items-center">
+                    <div class="abt-cont p-3 py-4 text-dark d-flex flex-column align-items-center justify-content-around"
+                        style="background-color: #F1F1F1;">
+                        <img src="./images/_Ã«Ã®Ã©_1 (2).png" style="width:70px; height:70px" alt="">
+                        <p>Book Car</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 about-card p-1 d-flex justify-content-center align-items-center">
+                    <div
+                        class="abt-cont p-3 py-4 text-white d-flex flex-column align-items-center justify-content-around">
+                        <img src="./images/_Ã«Ã®Ã©_1 (3).png" style="width:70px; height:70px" alt="">
+                        <p>Drive A Car</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <a href="" class=" position-relative text-decoration-none text-black p-3 py-2 me-2" style="border-radius: 50px;     border: 0.5px solid rgba(0, 0, 0, 0.373) ;background-color:white
+                ">Request Quote</a>
+                <p class="text-white mb-0 mx-2">OR</p>
+                <a href="" class=" position-relative text-decoration-none text-white p-3 py-2 ms-2" style="border-radius: 50px;     border: 0.5px solid white; background-color:#050b20;
+                ">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 ">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-7 d-flex flex-column align-items-center">
+                    <p class="mb-2 me-3 pb-1 car-road position-relative dms">Our Services? <i
+                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Explore Our Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2 ld">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/serv-1.jpg" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Buy Used Cars</h4>
+                        <p class="text-center">Affordable pre-loved cars</p>
+                        <div class="w-100 px-2">
+                            <a href="./listings.html" class="btn btn-dark w-100 text-left"><i
+                                    class="fa-solid fa-money-check-dollar me-2"></i> Buy Used cars</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/servicesImage2.png" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Sell Used Cars</h4>
+                        <p class="text-center">Sell fast, stress-free</p>
+                        <div class="w-100 px-2">
+                            <a href="./sell1.html" class="btn btn-dark w-100 text-left"><i
+                                    class="fa-solid fa-tag me-2"></i> Sell
+                                Used
+                                Cars</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/servicesImage1.png" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Find Car Valuation</h4>
+                        <p class="text-center">Fast process , good price</p>
+                        <div class="w-100 px-2">
+                            <a href="./sell2.html" class="btn btn-dark w-100 text-left"><i
+                                    class="fa-solid fa-money-check-dollar me-2"></i> Get Car Valuation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/servicesImage4.png" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Car Finance</h4>
+                        <p class="text-center"> Fast approval</p>
+                        <div class="w-100 px-2">
+                            <a href="./loancalculator.html" class="btn btn-dark w-100 text-left"><i
+                                    class="fa-solid fa-coins me-2"></i> Car
+                                Financing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/serv-5.jpg" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Fix my car</h4>
+                        <p class="text-center">Affordable pre-loved cars</p>
+                        <div class="w-100 px-2">
+                            <a href="" class="btn btn-dark w-100 text-left"><i class="fa-solid fa-car me-2"></i> Fix My
+                                car</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/serv-6.jpg" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Garage Booking</h4>
+                        <p class="text-center">Sell fast, stress-free</p>
+                        <div class="w-100 px-2">
+                            <a href="" class="btn btn-dark w-100 text-left"><i class="fa-solid fa-tag me-2"></i> Garage
+                                Booking</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/serv-7.jpg" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Watch my car</h4>
+                        <p class="text-center">Fast process, good price</p>
+                        <div class="w-100 px-2">
+                            <a href="" class="btn btn-dark w-100 text-left"><i
+                                    class="fa-solid fa-money-check-dollar me-2"></i> Watch My Car</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 position-relative mt-4 py-2 px-3">
+                    <div class="img-services w-100 " style="height: 180px; border-radius:8px; overflow:hidden">
+                        <img class="w-100 h-100 " style="object-fit: cover;" src="./images/serv-8.jpg" alt="">
+                    </div>
+                    <div class="cont-services mt-3 w-100">
+                        <h4 class="text-center" style="font-weight: bold; ">Inspect and fuel up</h4>
+                        <p class="text-center"> Fast approval</p>
+                        <div class="w-100 px-2">
+                            <a href="" class="btn btn-dark w-100 text-left"><i class="fa-solid fa-coins me-2"></i> Fast
+                                Approval</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 dms">
+        <div class="container mt-5">
+            <div class="row py-4 py-3 mt-5" style="background-color: #050b20;">
+                <div class="col-lg-3 text-white d-flex flex-column justify-content-center align-items-center"
+                    style="border-right: 1px solid rgba(255, 255, 255, 0.378);">
+                    <h3>3500+</h3>
+                    <p>Cars for Sale</p>
+                </div>
+                <div class="col-lg-3 text-white d-flex flex-column justify-content-center align-items-center"
+                    style="border-right: 1px solid rgba(255, 255, 255, 0.378);">
+                    <h3>15000+</h3>
+                    <p>Visitors per day</p>
+                </div>
+                <div class="col-lg-3 text-white d-flex flex-column justify-content-center align-items-center"
+                    style="border-right: 1px solid rgba(255, 255, 255, 0.378);">
+                    <h3>350+</h3>
+                    <p>Official Dealers</p>
+                </div>
+                <div class="col-lg-3 text-white d-flex flex-column justify-content-center align-items-center">
+                    <h3>25000+</h3>
+                    <p>Client Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 py-3" style="background-color: #F1F1F1;">
+        <div class="container mt-4 ">
+            <div class="row  justify-content-center">
+                <div class="col-lg-7 d-flex flex-column align-items-center">
+                    <p class="mb-2 me-3 pb-1 car-road position-relative dms">Our Best Team
+                        <i class="fa-solid fa-car-side ps-2 fs-5"></i>
+                    </p>
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Meet Our Team </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container  mt-5 mb-5 ld">
+            <div class="row">
+                <div class="col-lg-3 position-relative">
+                    <div class="card-team position-relative mt-3"
+                        style="height:300px; background-color:rgba(0, 0, 0, 0.129); border-radius:7px;">
+                        <div class="position-absolute w-100 px-2 pb-2 py-2" style="height: 115px; bottom:0;">
+                            <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center px-1 py-1"
+                                style="background-color:white;  border-radius:7px;">
+                                <p class="fw-bold mb-0 pb-0">Prashanth Gandhidoss</p>
+                                <p class="fw-bold mb-0 ">CEO</p>
+                                <div class="d-flex px-5 w-100 justify-content-around">
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-facebook-f p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-x-twitter p- m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 "
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-linkedin-in p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-instagram m-0 p-0"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="card-team position-relative mt-3"
+                        style="height:300px; background-color:rgba(0, 0, 0, 0.129); border-radius:7px;">
+                        <div class="position-absolute w-100 px-2 pb-2 py-2" style="height: 115px; bottom:0;">
+                            <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center px-1 py-1"
+                                style="background-color:white;  border-radius:7px;">
+                                <p class="fw-bold mb-0 pb-0">Prashanth Gandhidoss</p>
+                                <p class="fw-bold mb-0 ">CEO</p>
+                                <div class="d-flex px-5 w-100 justify-content-around">
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-facebook-f p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-x-twitter p- m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 "
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-linkedin-in p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-instagram m-0 p-0"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="card-team position-relative mt-3"
+                        style="height:300px; background-color:rgba(0, 0, 0, 0.129); border-radius:7px;">
+                        <div class="position-absolute w-100 px-2 pb-2 py-2" style="height: 115px; bottom:0;">
+                            <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center px-1 py-1"
+                                style="background-color:white;  border-radius:7px;">
+                                <p class="fw-bold mb-0 pb-0">Prashanth Gandhidoss</p>
+                                <p class="fw-bold mb-0 ">CEO</p>
+                                <div class="d-flex px-5 w-100 justify-content-around">
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-facebook-f p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-x-twitter p- m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 "
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-linkedin-in p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-instagram m-0 p-0"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 position-relative">
+                    <div class="card-team position-relative mt-3"
+                        style="height:300px; background-color:rgba(0, 0, 0, 0.129); border-radius:7px;">
+                        <div class="position-absolute w-100 px-2 pb-2 py-2" style="height: 115px; bottom:0;">
+                            <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center px-1 py-1"
+                                style="background-color:white;  border-radius:7px;">
+                                <p class="fw-bold mb-0 pb-0">Prashanth Gandhidoss</p>
+                                <p class="fw-bold mb-0 ">CEO</p>
+                                <div class="d-flex px-5 w-100 justify-content-around">
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-facebook-f p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-x-twitter p- m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 "
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-linkedin-in p-0 m-0"></i></a>
+                                    <a href="" class="text-white px-2 py-1 fs-7"
+                                        style="background-color: #050b20; border-radius:5px; font-size:small"><i
+                                            class="fa-brands fa-instagram m-0 p-0"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 ">
+            <div class="row  justify-content-center">
+                <div class="col-lg-7 d-flex flex-column align-items-center">
+                    <p class="mb-2 me-3 pb-1 car-road position-relative dms">Testimonials <i
+                            class="fa-solid fa-car-side ps-2 fs-5"></i></p>
+                    <h2 class=" mb-0 pb-0 text-center ld" style="font-weight: bold; ">Customer Reviews & Support </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-5 dms">
+            <div class="row">
+                <div class="col-lg-4 position-relative mt-2">
+                    <div class="w-100 d-flex flex-column justify-content-around px-3 py-3"
+                        style="height:220px; background-color:white; border: 1px solid rgba(0, 0, 0, 0.529); border-radius:7px; transform:scale(0.9)">
+                        <h5 class="fw-bold">SUV Car</h5>
+                        <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo nulla perspiciatis neque
+                            quo.</p>
+                        <div class="d-flex justify-content-around ">
+                            <img src="https://s3-alpha-sig.figma.com/img/2522/6b40/5b4f9d2007e994400e2d4cdc173af0a7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Um8Zd2p-ZnHy7yVa9rX3S1fppjLu4JgFJeukEjJueVPk2crqsZALbW8QoQUMQVbysN~AGRAwGkl4EN04ZwWmIJ-QdTK8YpTtMwJ3x~nEsJUX71p2yURj1qIBR-8tn0Sib~rrYXxGMrGJrhn22SVNI~~uOEy9-nekLSoGI2GD7lqxSfsJ2p-R72ZE8qP7BYHExH8MPVvUPXSmLYVsqMRAstmVMWQ1NAT9VlJsXrqQ1SAURQD-semLWl9aMsnHv4tDH-YRMnge6vrpB94clUbL~~0v0shvzY0CdOnCtk7zuHyBNxKIPzSD27VXC3bFM6WQcuHw6X3sI0YUbN4tp3jbVA__"
+                                style="width: 60px; height:60px; object-fit:cover; border-radius:50%" alt="">
+                            <div style="width: 50%;">
+                                <p class="fw-bold mb-0">Michael</p>
+                                <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                </p>
+                            </div>
+                            <p class="" style="color: #F1F1F1;"><i class="fa-solid fa-quote-right "
+                                    style="font-size: 70px;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 position-relative mt-2">
+                    <div class="w-100 d-flex flex-column justify-content-around px-3 py-3 text-white"
+                        style="height:220px; background-color:black; border: 1px solid rgba(255, 255, 255, 0.479); border-radius:7px; transform:scale(1.1)">
+                        <h5 class="fw-bold">SUV Car</h5>
+                        <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo nulla perspiciatis neque
+                            quo.</p>
+                        <div class="d-flex justify-content-around ">
+                            <img src="https://s3-alpha-sig.figma.com/img/2522/6b40/5b4f9d2007e994400e2d4cdc173af0a7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Um8Zd2p-ZnHy7yVa9rX3S1fppjLu4JgFJeukEjJueVPk2crqsZALbW8QoQUMQVbysN~AGRAwGkl4EN04ZwWmIJ-QdTK8YpTtMwJ3x~nEsJUX71p2yURj1qIBR-8tn0Sib~rrYXxGMrGJrhn22SVNI~~uOEy9-nekLSoGI2GD7lqxSfsJ2p-R72ZE8qP7BYHExH8MPVvUPXSmLYVsqMRAstmVMWQ1NAT9VlJsXrqQ1SAURQD-semLWl9aMsnHv4tDH-YRMnge6vrpB94clUbL~~0v0shvzY0CdOnCtk7zuHyBNxKIPzSD27VXC3bFM6WQcuHw6X3sI0YUbN4tp3jbVA__"
+                                style="width: 60px; height:60px; object-fit:cover; border-radius:50%" alt="">
+                            <div style="width: 50%;">
+                                <p class="fw-bold mb-0">Johnson</p>
+                                <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                </p>
+                            </div>
+                            <p class="" style="color: #F1F1F1;"><i class="fa-solid fa-quote-right "
+                                    style="font-size: 70px;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 position-relative mt-2">
+                    <div class="w-100 d-flex flex-column justify-content-around px-3 py-3"
+                        style="height:220px; background-color:white; border: 1px solid rgba(0, 0, 0, 0.529); border-radius:7px; transform:scale(0.9)">
+                        <h5 class="fw-bold">SUV Car</h5>
+                        <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo nulla perspiciatis neque
+                            quo.</p>
+                        <div class="d-flex justify-content-around ">
+                            <img src="https://s3-alpha-sig.figma.com/img/2522/6b40/5b4f9d2007e994400e2d4cdc173af0a7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Um8Zd2p-ZnHy7yVa9rX3S1fppjLu4JgFJeukEjJueVPk2crqsZALbW8QoQUMQVbysN~AGRAwGkl4EN04ZwWmIJ-QdTK8YpTtMwJ3x~nEsJUX71p2yURj1qIBR-8tn0Sib~rrYXxGMrGJrhn22SVNI~~uOEy9-nekLSoGI2GD7lqxSfsJ2p-R72ZE8qP7BYHExH8MPVvUPXSmLYVsqMRAstmVMWQ1NAT9VlJsXrqQ1SAURQD-semLWl9aMsnHv4tDH-YRMnge6vrpB94clUbL~~0v0shvzY0CdOnCtk7zuHyBNxKIPzSD27VXC3bFM6WQcuHw6X3sI0YUbN4tp3jbVA__"
+                                style="width: 60px; height:60px; object-fit:cover; border-radius:50%" alt="">
+                            <div style="width: 50%;">
+                                <p class="fw-bold mb-0">Charles</p>
+                                <p class="" style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                </p>
+                            </div>
+                            <p class="" style="color: #F1F1F1;"><i class="fa-solid fa-quote-right "
+                                    style="font-size: 70px;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex w-100 justify-content-center">
+            <p class="mx-1"><i class="fa-solid fa-circle-dot"></i></p>
+            <p class="mx-1" style="transform: scale(1.4);"><i class="fa-solid fa-circle-dot"></i></p>
+            <p class="mx-1"><i class="fa-solid fa-circle-dot"></i></p>
+        </div>
+    </section>
+    <footer style=" position:relative; background-color: #050b20; color:#F1F1F1">
+        <!-- <div class="position-absolute " style="width: 100%; height:100%; top:0%; left:0%; z-index:4">
+            <img src="./images/Layer_1.png" class=" w-100 h-100 position-relative" alt="">
+        </div> -->
+
+        <div class="container p-4"
+            style="background:url(./images/Layer_1.png); background-size:contain; background-position:center">
+            <div class="row my-4 h-100">
+                <div class="col-lg-5 py-5 px-3" style="display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                ">
+                    <p class="text-white  pb-1 mb-1 dms" style="font-size: smaller;">Research has had a very large
+                        influence
+                        on my
+                        life. I have learned most of
+                        what I know through research.</p>
+                    <h4 class="text-white ld">
+                        NewsLetter
+                    </h4>
+                    <form action="" class="d-flex mb-1 dms">
+                        <input id="subs-email" class="my-1 px-4 input" type="text" placeholder="Your Email Id">
+                        <button id="subs-button" class="my-1 px-3" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white mx-2 dms" style="font-size: smaller;">Your email is safe with us, we don't
+                        spam.
+                        Privacy
+                        Policy
+                    </p>
+                </div>
+                <div class="col-lg-7 d-flex flex-column ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Address
+                                </strong>
+                                <p class="mt-2 dms">#1, 1st Street, Dubai, UAE</p>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                style="border-right: 1px solid #4e6bfb3f;">
+                                <strong class="ld fw-bold">
+                                    Quick Links
+                                </strong>
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Contact</a>
+                                <a href="">Cart</a>
+
+                            </div>
+                            <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms">
+                                <strong class="ld fw-bold">
+                                    Popular Brands
+                                </strong>
+                                <a href="">bugatti</a>
+                                <a href="">BMW</a>
+                                <a href="">Benz</a>
+                                <a href="">Audi</a>
+                            </div>
+                        </div>
+                        <hr class="py-0 my-0 footer-horizontal" />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+
+                                        <strong class="ld fw-bold">
+                                            Branches
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column justify-content-around px-3 py-2 pb-4 dms"
+                                        style="border-right: 1px solid #4e6bfb3f;">
+                                        <div> <strong class="ld fw-bold">
+
+                                                Call Center
+                                            </strong>
+                                            <p>2345 59786</p>
+                                        </div>
+                                        <div> <strong class="ld fw-bold">
+
+                                                Follow Us
+                                            </strong>
+                                            <div class="d-flex w-100 mt-2 social-footer">
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-x-twitter"></i></a>
+                                                <a href=""
+                                                    class="mx-1 d-flex justify-content-center align-items-center"><i
+                                                        class="fa-brands fa-youtube"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  d-flex flex-column px-3 py-2 pb-4 mds">
+                                        <strong class="ld fw-bold">
+                                            UAE
+                                        </strong>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                        <a href="">dubai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-horizontal" />
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
